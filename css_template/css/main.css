@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    MAIN.CSS
+\*------------------------------------*/
+/**
+ *
+ * sass --watch main.scss:main.min.css --style compressed
+ *
+ * Here we pull in some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
+/**
+ * Setup
+ */
+/*------------------------------------*\
+    VARS.SCSS
+\*------------------------------------*/
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Base stuff
+ */
+/*------------------------------------*\
+    $CUSTOM
+\*------------------------------------*/
+/**
+ * Zagales theme
+ */
+/*------------------------------------*\
+    $ZAGALES
+\*------------------------------------*/
+/**
+ * Author: Jesús Cuadra
+ * twitter: @tallergorilas
+ */
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * CONTENTS............You’re reading it!
+ * IMPORTS.............Begin importing the sections below
+ *
+ * MIXINS..............Custom mixins
+ *
+ * MAIN................Main styles shared all over the webpage
+ * HOMEPAGE............Homepage
+ * 
+ */
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/**
+ * Generic utility styles etc.
+ */
+/*------------------------------------*\
+	$MIXINS
+\*------------------------------------*/
+/**
+ * Base styles; unclassed HTML elements etc.
+ */
+/*------------------------------------*\
+	$MAIN
+\*------------------------------------*/
+/**
+ * Styles used in page templates.
+ */
+/*------------------------------------*\
+	$HOMEPAGE
+\*------------------------------------*/
