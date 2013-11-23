@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zagalesDiyApp', [])
+angular.module('zagalesDiyApp', ['ngRoute','ngAnimate'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
