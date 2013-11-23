@@ -41,4 +41,3 @@ dist
 .tmp
 .sass-cache
 app/components
-.ruby-version
