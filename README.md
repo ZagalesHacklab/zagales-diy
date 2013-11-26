@@ -6,6 +6,8 @@ zagales-diy
 Para hacer funcionar debes tener instalado en tu máquina:
 
 * [node](http://nodejs.org/)
+* [ruby 2](https://www.ruby-lang.org/es/)
+* [compass-0.12.2](http://compass-style.org)
 
 También usaremos [yeoman](http://yeoman.io/) (se te instalará al resolver las dependencias en el siguiente paso).
 
