@@ -10,4 +10,9 @@ angular.module('zagalesDiyApp', ['ngRoute','ngAnimate'])
       .otherwise({
         redirectTo: '/'
       });
+  })
+  .run(function($rootScope, $document) {
+    $rootScope.$on('$viewContentLoaded', function () {
+        $document.foundation();
+      });
   });
