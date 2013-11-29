@@ -2,6 +2,8 @@
 
 describe('Controller: MainCtrl', function () {
 
+    var expect = chai.expect;
+
   // load the controller's module
   beforeEach(module('zagalesDiyApp'));
 
@@ -16,7 +18,11 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should attach a list of challenges to the scope', function () {
+    expect(scope.challenges).to.have.length(0);
   });
+
+    it('should have a button to load data', function () {
+        expect(scope).to.respondTo('loadData');
+    });
 });
