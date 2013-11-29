@@ -3,6 +3,9 @@ node_js:
   - '0.10'
 
 before_script:
+  - 'rvm autolibs enable'
+  - 'rvm reload'
+  - 'rvm requirements'
   - 'rvm install 2.0.0'
   - 'rvm use 2.0.0'
   - 'gem update --system'
