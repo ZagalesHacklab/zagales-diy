@@ -6,7 +6,7 @@ angular.module('zagalesDiyApp')
             scope: {
                 challenge: '=ngModel'
             },
-            template: '<div><h3>{{challenge.title}}</h3><img ng-src="{{challenge.image}}"></div>',
+            templateUrl: 'views/partials/challenge_mini.html',
             restrict: 'E',
             replace: true
         };

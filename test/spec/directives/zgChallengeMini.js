@@ -7,13 +7,17 @@ describe('Directive: zgChallengeMini', function () {
 
     var element;
 
-    beforeEach(module('zagalesDiyApp'));
+    beforeEach(function () {
+        module('zagalesDiyApp');
+
+        module('templates');
+    });
 
     beforeEach(inject(function ($rootScope, $compile) {
         $rootScope.data = {
             title: 'one title',
             image: 'http://dumy.com/image.png'
-        }
+        };
 
         element = angular.element('<zg-challenge-mini ng-model="data"></zg-challenge-mini>');
         element = $compile(element)($rootScope);
