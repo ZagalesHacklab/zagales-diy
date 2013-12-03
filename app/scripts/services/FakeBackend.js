@@ -1,5 +1,6 @@
 'use strict';
 
+<<<<<<< HEAD
 (function (ng) {
 	var FakeBackend = function FakeBackend($httpBackend, $resource) {
 		return {
@@ -46,3 +47,28 @@
 	});
 
 })(angular);
+=======
+angular.module('zagalesDiyApp')
+	.factory('FakeBackend', function ($httpBackend, $resource) {
+
+		function mockResponse(realUrl, mockUrl) {
+			var response = $resource(mockUrl).get();
+
+			$httpBackend.whenGET(realUrl).respond(response);
+		}
+
+
+		return {
+			init: function () {
+
+				console.warn('WARNING: USING FAKE BACKEND');
+
+				$httpBackend.whenGET(/.*.(html|png|jpg|gif)/).passThrough();
+				$httpBackend.whenGET(/test\/.*/).passThrough();
+
+				mockResponse('../api/challenges/recent', '../test/mocks/recent_challenges.json');
+			}
+
+		};
+	});
+>>>>>>> b1e181c... zagales-diy-1 fakeBackend module approach (tests fail)
