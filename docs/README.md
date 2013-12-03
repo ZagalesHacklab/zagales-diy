@@ -33,6 +33,10 @@ Gestión de Frontend:
 
 > [yeoman.io](http://yeoman.io/ "yeoman")
 
+Mini-tutorial Git:
+
+> [Chuleta de comandos Git](http://elbauldelprogramador.com/articulos/mini-tutorial-y-chuleta-de-comandos-git/ "Minitutorial Git")
+
 ## Trello ##
 
 Tenemos dos paneles en Trello:
