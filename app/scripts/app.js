@@ -1,6 +1,11 @@
 'use strict';
 
-angular.module('zagalesDiyApp', ['ngRoute', 'ngAnimate'])
+//angular.module('zagalesDiyApp', ['ngRoute', 'ngAnimate'])
+
+// devmode -- remove this for to call real services
+angular.module('zagalesDiyApp', ['ngRoute', 'ngAnimate', 'zgFakeBackend'])
+// end devmode
+
 	.config(function ($routeProvider, $locationProvider) {
 		$locationProvider.html5Mode(false);
 
