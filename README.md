@@ -11,16 +11,16 @@ Zagales DIY es un proyecto de Agile Aragon con el que prentendemos practicar con
 
 * Web de Zagales Hacklab: http://zagales-hacklab.org
 * Web de Agile Aragón: http://agile-aragon.org
-* Nuestro grupo de Google+: https://plus.google.com/u/1/communities/111659385236519213596
+* Nuestro grupo de Google+: [Zagales Hacklab (dev)](https://plus.google.com/u/1/communities/111659385236519213596)
 * Nuestro backlog: https://trello.com/b/PV105GlH/zhl-devs-product-backlog
 * Nuestro repositorio: https://github.com/ZagalesHacklab/zagales-diy
 * Nuestro servidor de integración continua: https://travis-ci.org/ZagalesHacklab/zagales-diy
-* Nuestra guía para desarrolladores: https://github.com/ZagalesHacklab/zagales-diy/CONTRIBUTING.md
-* Instrucciones de instalación: https://github.com/ZagalesHacklab/zagales-diy/INSTALL.md
+* Nuestra guía para desarrolladores: [CONTRIBUTING.md](./CONTRIBUTING.md)
+* Instrucciones de instalación: [INSTALL.md](./INSTALL.md)
 * Otra documentación: https://github.com/ZagalesHacklab/zagales-diy/docs/
 
 ## Colabora con nosotros ##
 
 ¿Quieres desarrollar con nosotros? ¿quieres sugerir una mejora? ¿has encontrado un bug?
 
-Revisa nuestra [guía para contributors](https://github.com/ZagalesHacklab/zagales-diy/CONTRIBUTING.md)
+Revisa nuestra [guía para contributors](./CONTRIBUTING.md)
