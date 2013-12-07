@@ -20,8 +20,20 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
+
+    <!-- mock backend: comment for use real services -->
+    <script>
+        angular.module('zagalesDiyAppDevelMode', ['zagalesDiyApp', 'ngMockE2E'])
+                .run(function (FakeBackend, $httpBackend) {
+                    FakeBackend.init($httpBackend);
+                });
+    </script>
+    <!-- end mock backend -->
 </head>
-<body ng-app="zagalesDiyApp">
+<!--<body ng-app="zagalesDiyApp">-->
+<body ng-app="zagalesDiyAppDevelMode">
+
+
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser
     today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better
@@ -45,6 +57,7 @@
 <script src="components/angular-sanitize/angular-sanitize.js"></script>
 <script src="components/angular-route/angular-route.js"></script>
 <script src="components/angular-animate/angular-animate.js"></script>
+<script src="components/angular-resource/angular-resource.js"></script>
 
 
 <!-- build:js scripts/scripts.js -->
@@ -56,21 +69,10 @@
 <!-- endbuild -->
 
 
-<!-- mock backend (comment for use real services) -->
-<script src="components/angular-resource/angular-resource.js"></script>
+<!-- mockbackend: comment for use real services. You must change ng-app too (see body tab) -->
 <script src="components/angular-mocks/angular-mocks.js"></script>
 <script src="scripts/services/FakeBackend.js"></script>
-<script src="scripts/zgFakeBackend.js"></script>
-<script>
-    (function (ng) {
-        ng.module('zagalesDiyApp')
-                .run(function (FakeBackend) {
-                  //  FakeBackend.init();
-                });
-    })(angular);
-
-</script>
-<!-- endmock -->
+<!-- endmockbackend -->
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
