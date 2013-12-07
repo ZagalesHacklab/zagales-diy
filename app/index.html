@@ -15,6 +15,7 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -67,6 +68,22 @@
 <script src="scripts/controllers/Challenge.js"></script>
 <!-- endbuild -->
 
+
+<!-- mock backend (comment for use real services) -->
+<script src="components/angular-resource/angular-resource.js"></script>
+<script src="components/angular-mocks/angular-mocks.js"></script>
+<script src="scripts/services/FakeBackend.js"></script>
+<script src="scripts/zgFakeBackend.js"></script>
+<script>
+    (function (ng) {
+        ng.module('zagalesDiyApp')
+                .run(function (FakeBackend) {
+                  //  FakeBackend.init();
+                });
+    })(angular);
+
+</script>
+<!-- endmock -->
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
