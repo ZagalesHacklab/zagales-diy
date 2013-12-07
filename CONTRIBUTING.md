@@ -29,7 +29,7 @@ Sigue leyendo ;)
 
 ### ¿Se te ocurre otra forma de colaborar con nosotros? ###
 
-Cuentanosla en nuestro grupo de Google+ o vente a una de nuestras quedadas ;)
+Cuentanosla en nuestro [grupo de Google+](https://plus.google.com/u/1/communities/111659385236519213596) o vente a una de nuestras quedadas ;)
 
 ## Instalación del entorno de desarrollo ##
 
@@ -41,7 +41,7 @@ instalarte el entorno de desarrollo
 Trata de hacer codigo limpio, del bonito, del que te sientas orgullos@ (Clean Code y Head First Desing Patterns deberían ser tus libros de cabecera)
 
 * Hacemos TDD, es decir **Todas las features o arreglos de bugs deben estar cubiertos por uno más tests**
-* Para el Javascript seguiremos las [reglas de estilo de Google](https://travis-ci.org/ZagalesHacklab/zagales-diy)
+* Para el Javascript seguiremos las [reglas de estilo de Google](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 * Vamos a programar en **inglés**. Tanto el código como los mensajes en los commits.
 * Para las directivas de angular usaremos el prefijo "zg-" (ej: <zg-photo>...</zg-photo>)
 
