@@ -45,13 +45,13 @@ Trata de hacer codigo limpio, del bonito, del que te sientas orgullos@ (Clean Co
 * Vamos a programar en **inglés**. Tanto el código como los mensajes en los commits.
 * Para las directivas de angular usaremos el prefijo "zg-" (ej: <zg-photo>...</zg-photo>)
 
-Nota: Muchas de estas reglas se comprueban automáticamente con jshint... ejecuta siempre 'grunt jshint' antes de hacer un commit
+Nota: Muchas de estas reglas se comprueban automáticamente con jshint... ejecuta siempre <code>grunt jshint</code> antes de hacer un commit
 
 ## Revisiones de código ##
 
-Tan importante como programar es revisar el código de los demás, cuando lo hagas se constructivo en tus comentarios.
+Tan importante como programar es revisar el código de los demás, cuando lo hagas sé constructivo en tus comentarios.
 
-Revisa periodicamente si hay pull request pendientes de procesar, (recuerda que estas peticiones deben ser integradas
+Revisa periodicamente si hay **pull request** pendientes de procesar, (recuerda que estas peticiones deben ser integradas
 por un programador distinto al que las haya solicitado).
 
 Antes de mergear:
