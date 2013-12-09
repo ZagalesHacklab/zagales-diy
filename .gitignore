@@ -42,3 +42,4 @@ dist
 .sass-cache
 app/components
 .ruby-version
+/nbproject/

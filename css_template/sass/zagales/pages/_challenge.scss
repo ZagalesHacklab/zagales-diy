@@ -1,0 +1,18 @@
+/* 
+    Created on : 09-dic-2013, 12:00:12
+    Author     : Oscar Gascón <o.gascon at gmail.com>
+*/
+
+
+/*------------------------------------*\
+    $CHALLENGE
+\*------------------------------------*/
+.challenge {
+    .challenge__username, .challenge__title {
+        display: inline;
+    }
+    .challenge__title--separator {
+        font-size: $h1-size;
+
+    }
+}
