@@ -78,4 +78,5 @@
 .challenge .challenge__username, .challenge .challenge__title {
   display: inline; }
 .challenge .challenge__title--separator {
-  font-size: 42px; }
+  font-size: 30px;
+  vertical-align: text-bottom; }
