@@ -20,15 +20,6 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
-
-    <!-- mock backend: comment for use real services -->
-    <script>
-        angular.module('zagalesDiyAppDevelMode', ['zagalesDiyApp', 'ngMockE2E'])
-                .run(function (FakeBackend, $httpBackend) {
-                    FakeBackend.init($httpBackend);
-                });
-    </script>
-    <!-- end mock backend -->
 </head>
 <!--<body ng-app="zagalesDiyApp">-->
 <body ng-app="zagalesDiyAppDevelMode">
@@ -53,35 +44,29 @@
 
 
 <script src="components/angular/angular.js"></script>
+<script src="components/angular-route/angular-route.js"></script>
 <script src="components/angular-resource/angular-resource.js"></script>
 <script src="components/angular-cookies/angular-cookies.js"></script>
 <script src="components/angular-sanitize/angular-sanitize.js"></script>
-<script src="components/angular-route/angular-route.js"></script>
 <script src="components/angular-animate/angular-animate.js"></script>
-<script src="components/angular-resource/angular-resource.js"></script>
-
 
 <!-- build:js scripts/scripts.js -->
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
-<script src="scripts/directives/zgChallengeMini.js"></script>
 <script src="scripts/controllers/Challenge.js"></script>
+<script src="scripts/services/ChallengesService.js"></script>
+<script src="scripts/directives/zgChallengeMini.js"></script>
 <!-- endbuild -->
 
 
 <!-- mock backend (comment for use real services) -->
-<script src="components/angular-resource/angular-resource.js"></script>
 <script src="components/angular-mocks/angular-mocks.js"></script>
 <script src="scripts/services/FakeBackend.js"></script>
-<script src="scripts/zgFakeBackend.js"></script>
 <script>
-    (function (ng) {
-        ng.module('zagalesDiyApp')
-                .run(function (FakeBackend) {
-                  //  FakeBackend.init();
-                });
-    })(angular);
-
+    angular.module('zagalesDiyAppDevelMode', ['zagalesDiyApp', 'ngMockE2E'])
+            .run(function (FakeBackend, $httpBackend, $resource) {
+                FakeBackend.init($httpBackend, $resource);
+            });
 </script>
 <!-- endmock -->
 
