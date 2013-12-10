@@ -1,4 +1,9 @@
 <div>
     <h3>{{challenge.title}}</h3>
     <a href="#Challenge/{{challenge.id}}"><img ng-src="{{challenge.image}}"></a>
+    <!--TODO: use avatar directive-->
+    <div>
+      <img ng-src="{{challenge.avatar}}"/>
+      <span>{{challenge.username}}</span>
+    </div>
 </div>
