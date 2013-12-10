@@ -14,9 +14,19 @@
 
         console.warn('WARNING: USING FAKE BACKEND');
 
-        function mockResponse(realUrl, mockUrl) {
+        function mockService(realUrl, mockUrl) {
+          //
+          //
+          // TODO: unit tests
+          //
+          // This works with ngMockE2E.$httpBackend
+          // but it fails with ngMock.$httpBackend
+          //
+          //
           var response = $resource(mockUrl).get();
-          //$httpBackend.whenGET(realUrl).respond({userId: 'userX'}, {'A-Token': 'xxx'});
+          //
+
+          $httpBackend.whenGET(realUrl).respond(response);
         }
 
         function passThrought(realUrl) {
@@ -31,7 +41,9 @@
         passThrought(/.*.(html|png|jpg|gif)/);
         passThrought(/.*\/test\/.*/);
 
-        mockResponse('../api/challenges/recent', '../test/mocks/recent_challenges.json');
+        // Add mock redirections here
+
+        mockService('../api/challenges/recent', '../test/mocks/recent_challenges.json');
       }
     };
   };

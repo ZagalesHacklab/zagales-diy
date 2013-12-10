@@ -64,8 +64,8 @@
 <script src="scripts/services/FakeBackend.js"></script>
 <script>
     angular.module('zagalesDiyAppDevelMode', ['zagalesDiyApp', 'ngMockE2E'])
-            .run(function (FakeBackend, $httpBackend, $resource) {
-                FakeBackend.init($httpBackend, $resource);
+            .run(function (FakeBackend) {
+                FakeBackend.init();
             });
 </script>
 <!-- endmock -->
