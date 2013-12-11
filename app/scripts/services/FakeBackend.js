@@ -14,7 +14,7 @@
 
         console.warn('WARNING: USING FAKE BACKEND');
 
-        function mockService(realUrl, mockUrl) {
+        function mockServiceQuery(realUrl, mockUrl) {
           //
           //
           // TODO: unit tests
@@ -23,7 +23,7 @@
           // but it fails with ngMock.$httpBackend
           //
           //
-          var response = $resource(mockUrl).get();
+          var response = $resource(mockUrl).query();
           //
 
           $httpBackend.whenGET(realUrl).respond(response);
@@ -43,7 +43,7 @@
 
         // Add mock redirections here
 
-        mockService('../api/challenges/recent', '../test/mocks/recent_challenges.json');
+        mockServiceQuery('../api/challenges', '../test/mocks/challenges.json');
       }
     };
   };

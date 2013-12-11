@@ -37,7 +37,7 @@ describe('Service: FakeBackend', function () {
     // see mockService() method in FakeBacked
     //
 
-//    backend.expectGET('../test/mocks/recent_challenges.json');
+//    backend.expectGET('../test/mocks/challenges.json');
 //    scope.$apply(function () {
 //      http.get('../api/challenges/recent');
 //    });
