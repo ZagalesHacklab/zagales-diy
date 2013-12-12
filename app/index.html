@@ -21,7 +21,10 @@
     <!-- endbuild -->
 
 </head>
-<body ng-app="zagalesDiyApp">
+<!--<body ng-app="zagalesDiyApp">-->
+<body ng-app="zagalesDiyAppDevelMode">
+
+
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser
     today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better
@@ -41,20 +44,31 @@
 
 
 <script src="components/angular/angular.js"></script>
+<script src="components/angular-route/angular-route.js"></script>
 <script src="components/angular-resource/angular-resource.js"></script>
 <script src="components/angular-cookies/angular-cookies.js"></script>
 <script src="components/angular-sanitize/angular-sanitize.js"></script>
-<script src="components/angular-route/angular-route.js"></script>
 <script src="components/angular-animate/angular-animate.js"></script>
-
 
 <!-- build:js scripts/scripts.js -->
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
-<script src="scripts/directives/zgChallengeMini.js"></script>
 <script src="scripts/controllers/Challenge.js"></script>
+<script src="scripts/services/Challenges.js"></script>
+<script src="scripts/directives/zgChallengeMini.js"></script>
 <!-- endbuild -->
 
+
+<!-- mock backend (comment for use real services) -->
+<script src="components/angular-mocks/angular-mocks.js"></script>
+<script src="scripts/services/FakeBackend.js"></script>
+<script>
+    angular.module('zagalesDiyAppDevelMode', ['zagalesDiyApp', 'ngMockE2E'])
+            .run(function (FakeBackend) {
+                FakeBackend.init();
+            });
+</script>
+<!-- endmock -->
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

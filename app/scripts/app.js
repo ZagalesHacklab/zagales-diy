@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zagalesDiyApp', ['ngRoute', 'ngAnimate'])
+angular.module('zagalesDiyApp', ['ngRoute', 'ngAnimate', 'ngResource'])
 	.config(function ($routeProvider, $locationProvider) {
 		$locationProvider.html5Mode(false);
 

@@ -14,14 +14,16 @@ describe('Directive: zgChallengeMini', function () {
     });
 
     beforeEach(inject(function ($rootScope, $compile) {
-        $rootScope.data = {
+	      var scope = $rootScope.$new();
+
+        scope.data = {
             title: 'one title',
             image: 'http://dumy.com/image.png'
         };
 
         element = angular.element('<zg-challenge-mini ng-model="data"></zg-challenge-mini>');
-        element = $compile(element)($rootScope);
-        $rootScope.$digest();
+        element = $compile(element)(scope);
+        scope.$digest();
 
     }));
 
