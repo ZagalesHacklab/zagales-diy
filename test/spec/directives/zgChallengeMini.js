@@ -20,7 +20,8 @@ describe('Directive: zgChallengeMini', function () {
             title: 'one title',
             image: 'http://dumy.com/image.png',
             username: 'my username',
-            avatar: 'http://placekitten.com/40/40'
+            avatar: 'http://placekitten.com/40/40',
+            tags: ['foo', 'bar']
         };
 
         element = angular.element('<zg-challenge-mini ng-model="data"></zg-challenge-mini>');
@@ -50,5 +51,11 @@ describe('Directive: zgChallengeMini', function () {
         //TODO: select elements by class rather than by position
         var username = element.find('div').eq(0).find('span').eq(0);
         expect(username.text()).to.equal('my username');
+    }));
+
+    it('should have tags', inject(function () {
+        var tags = element.find('div').eq(1).find('span');
+        expect(tags.eq(0).text()).to.equal('foo');
+        expect(tags.eq(1).text()).to.equal('bar');
     }));
 });
