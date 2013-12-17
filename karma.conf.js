@@ -21,7 +21,8 @@ module.exports = function (config) {
 
 			files: [
 				'components/chai/chai.js',
-				'components/angular/angular.js',
+				'components/jquery/jquery.js',
+        'components/angular/angular.js',
 				'components/angular-mocks/angular-mocks.js',
 				'components/angular-route/angular-route.js',
 				'components/angular-animate/angular-animate.js',

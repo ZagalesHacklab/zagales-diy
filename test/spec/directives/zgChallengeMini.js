@@ -28,14 +28,15 @@ describe('Directive: zgChallengeMini', function () {
     }));
 
     it('should have a title', inject(function () {
-        var titles = element.find('h3');
+        var titles = element.find('header');
         expect(titles).to.have.length(1);
 
         expect(titles.eq(0).text()).to.equal('one title');
     }));
 
     it('should have an image', inject(function () {
-        var images = element.find('img');
+        var images = element.find('.thumb__image img');
+
         expect(images).to.have.length(1);
 
         var image = images.eq(0);
