@@ -1,4 +1,28 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    MAIN.CSS
+\*------------------------------------*/
+/**
+ *
+ * sass --watch main.scss:main.min.css --style compressed
+ *
+ * Here we pull in some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
 
-@import "../components/foundation/scss/foundation.scss";
 
-/* Will be compiled down to a single stylesheet with your sass files */
+/**
+ * Setup
+ */
+@import "vars";
+@import "bourbon";
+
+
+
+
+/**
+ * Zagales theme
+ */
+@import "zagales/zagales";
+
+
