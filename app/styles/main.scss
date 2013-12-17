@@ -14,8 +14,10 @@
 /**
  * Setup
  */
+
+@import "../components/foundation/scss/foundation.scss";
 @import "vars";
-@import "bourbon";
+@import "../components/bourbon/app/assets/stylesheets/bourbon";
 
 
 

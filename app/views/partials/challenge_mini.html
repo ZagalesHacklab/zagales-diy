@@ -1,4 +1,31 @@
-<div>
-    <h3>{{challenge.title}}</h3>
-    <a href="#Challenge/{{challenge.id}}"><img ng-src="{{challenge.image}}"></a>
-</div>
+<article class="thumb">
+    <div class="thumb__image">
+        <a href="#Challenge/{{challenge.id}}">
+            <img src="http://dummyimage.com/600x400/" alt="thumb">
+        </a>
+    </div>
+    <div class="thumb__title">
+        <header>Titulo</header>
+    </div>
+    <div class="thumb__meta">
+        <a href="#">
+            <img src="http://dummyimage.com/32x32/" alt="avatar">
+            <span>Username</span>
+        </a>
+
+        <div class="thumb__cats right">
+            <ul class="inline-list">
+                <li>
+                    <a href="#">
+                        cat 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        cat 2
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</article>

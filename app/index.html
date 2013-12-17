@@ -37,7 +37,69 @@
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<div class="container" ng-view></div>
+
+<nav class="top-bar" data-topbar>
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="#">Clan.zagales</a></h1>
+        </li>
+    </ul>
+
+    <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+            <li class="has-form">
+                <a class="button">Regístrate</a>
+            </li>
+            <li>
+                <a href="#">Acceder</a>
+            </li>
+            <li class="divider"></li>
+            <li class="has-form">
+                <a class="button">Proponer un reto</a>
+            </li>
+            <li class="divider"></li>
+            <li class="has-dropdown">
+                <a href="#">Username</a>
+                <ul class="dropdown">
+                    <li><a href="#">Mi página</a></li>
+                    <li><a href="#">Configuración</a></li>
+                    <li><a href="#">Cerrar sesión</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</nav>
+
+<div class="content-wrapper" ng-view></div>
+
+<div class="sub-footer">
+    <div class="row">
+        <div class="large-3 columns">
+            <nav class="nav-footer">
+                <ul class="side-nav">
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                </ul>
+            </nav><!-- .nav-footer -->
+        </div>
+        <div class="large-3 columns">
+            <div class="uplink text-right">
+                <a href="#">Arriba</a>
+            </div>
+        </div>
+    </div>
+</div><!-- .sub-footer -->
+<footer class="footer">
+    <div class="row">
+        <div class="small-6 large-centered columns text-center">
+            Clan.zagales. <a href="#">info@email.com</a>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+</footer>
+
+<!-- scripts -->
 
 <script src="components/jquery/jquery.min.js"></script>
 <script src="components/foundation/js/foundation.min.js"></script>
