@@ -43,7 +43,7 @@
 
         // Add mock redirections here
 
-        mockServiceQuery('api/challenges', '../test/mocks/challenges.json');
+        mockServiceQuery('../api/challenges', '../test/mocks/challenges.json');
       }
     };
   };

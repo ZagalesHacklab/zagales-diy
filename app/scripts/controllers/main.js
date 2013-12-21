@@ -14,4 +14,5 @@ angular.module('zagalesDiyApp')
     };
 
     $scope.loadData();
+
   });
