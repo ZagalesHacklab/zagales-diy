@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('zagalesDiyApp')
-  .factory('Challenges', function ($resource) {
+  .factory('Challenges', function ($resource, config) {
 
-    return $resource('../api/challenges');
+    return $resource(config.CHALLENGES_URL);
   });

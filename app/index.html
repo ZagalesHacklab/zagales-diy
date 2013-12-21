@@ -21,8 +21,7 @@
     <!-- endbuild -->
 
 </head>
-<!--<body ng-app="zagalesDiyApp">-->
-<body ng-app="zagalesDiyAppDevelMode">
+<body ng-app="zagalesDiyApp">
 
 
 <!--[if lt IE 7]>
@@ -120,17 +119,6 @@
 <script src="scripts/directives/zgChallengeMini.js"></script>
 <!-- endbuild -->
 
-
-<!-- mock backend (comment for use real services) -->
-<script src="components/angular-mocks/angular-mocks.js"></script>
-<script src="scripts/services/FakeBackend.js"></script>
-<script>
-    angular.module('zagalesDiyAppDevelMode', ['zagalesDiyApp', 'ngMockE2E'])
-            .run(function (FakeBackend) {
-                FakeBackend.init();
-            });
-</script>
-<!-- endmock -->
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
