@@ -6,10 +6,10 @@ angular.module('zagalesDiyApp')
         scope: {
             tags: '=',
             urlBase: '@'
-        },
-        templateUrl: 'views/partials/tags.html',
-        restrict: 'E',
-        replace: false,
-        transclude: true
-    };
+          },
+          templateUrl: 'views/partials/tags.html',
+          restrict: 'E',
+          replace: false,
+          transclude: true
+        };
   });
