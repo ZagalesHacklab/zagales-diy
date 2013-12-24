@@ -7932,7 +7932,7 @@ ul.pagination li a:hover {
 /* line 157, ../../app/styles/zagales/base/_main.scss */
 .nav-footer {
   padding: 1em;
-  background: transparent url("/img/paper.png") top left no-repeat;
+  background: transparent url("/styles/img/paper.png") top left no-repeat;
   height: 150px;
 }
 /* line 161, ../../app/styles/zagales/base/_main.scss */
