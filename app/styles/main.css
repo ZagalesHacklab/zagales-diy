@@ -7771,7 +7771,7 @@ th.hide-for-touch {
 \*------------------------------------*/
 /* line 6, ../../app/styles/zagales/base/_main.scss */
 body {
-  background: #f0f0f0 url("styles/img/bg.png");
+  background: #f0f0f0 url("/styles/img/bg.png");
 }
 
 /* LINKS */
