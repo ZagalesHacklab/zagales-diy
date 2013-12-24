@@ -7,130 +7,162 @@
 <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
 
-</head>
-<body ng-app="zagalesDiyApp">
+    </head>
+    <body ng-app="zagalesDiyApp">
 
 
-<!--[if lt IE 7]>
-<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser
-    today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better
-    experience this site.</p>
-<![endif]-->
+        <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser
+            today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better
+            experience this site.</p>
+        <![endif]-->
 
-<!--[if lt IE 9]>
-<script src="components/es5-shim/es5-shim.js"></script>
-<script src="components/json3/lib/json3.min.js"></script>
-<![endif]-->
+        <!--[if lt IE 9]>
+        <script src="components/es5-shim/es5-shim.js"></script>
+        <script src="components/json3/lib/json3.min.js"></script>
+        <![endif]-->
 
-<!-- Add your site or application content here -->
+        <!-- Add your site or application content here -->
 
-<nav class="top-bar" data-topbar>
-    <ul class="title-area">
-        <li class="name">
-            <h1><a href="#">Clan.zagales</a></h1>
-        </li>
-    </ul>
+        <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="#">Clan.zagales</a></h1>
+                </li>
+            </ul>
 
-    <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-            <li class="has-form">
-                <a class="button">Regístrate</a>
-            </li>
-            <li>
-                <a href="#">Acceder</a>
-            </li>
-            <li class="divider"></li>
-            <li class="has-form">
-                <a class="button">Proponer un reto</a>
-            </li>
-            <li class="divider"></li>
-            <li class="has-dropdown">
-                <a href="#">Username</a>
-                <ul class="dropdown">
-                    <li><a href="#">Mi página</a></li>
-                    <li><a href="#">Configuración</a></li>
-                    <li><a href="#">Cerrar sesión</a></li>
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li class="has-form">
+                       <a href="#">
+                            <object type="image/svg+xml" data="img/icons/alt_pen.svg" class="top-bar__buttons"></object>
+                            Regístrate
+                        </a>
+                    </li>
+                    <li>
+                       <a href="#">
+                            <object type="image/svg+xml" data="img/icons/alt_key.svg" class="top-bar__buttons"></object>
+                            Acceder
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="has-form">
+                        <a href="#">
+                            <object type="image/svg+xml" data="img/icons/alt_fire.svg" class="top-bar__buttons"></object>
+                            Proponer un reto
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="has-dropdown">
+                        <a href="#">
+                            <object type="image/svg+xml" data="img/icons/alt_user.svg" class="top-bar__buttons"></object>
+                            Username
+                        </a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="#">
+                                    <object type="image/svg+xml" data="img/icons/alt_study.svg" class="top-bar__buttons"></object>
+                                    Mi página
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <object type="image/svg+xml" data="img/icons/alt_settings.svg" class="top-bar__buttons"></object>
+                                    Configuración
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <object type="image/svg+xml" data="img/icons/alt_lock.svg" class="top-bar__buttons"></object>
+                                    Cerrar sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-        </ul>
-    </section>
-</nav>
+            </section>
+        </nav>
 
-<div class="content-wrapper" ng-view></div>
+        <div class="content-wrapper" ng-view></div>
 
-<div class="sub-footer">
-    <div class="row">
-        <div class="large-3 columns">
-            <nav class="nav-footer">
-                <ul class="side-nav">
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                </ul>
-            </nav><!-- .nav-footer -->
-        </div>
-        <div class="large-3 columns">
-            <div class="uplink text-right">
-                <a href="#">Arriba</a>
+        <div class="sub-footer">
+            <div class="row">
+                <div class="large-3 columns">
+                    <nav class="nav-footer">
+                        <ul class="side-nav">
+                            <li><a href="#"><i class="fa fa-info-circle"></i> Acerca de</a></li>
+                            <li><a href="#"><i class="fa fa-question-circle"></i> Preguntas frecuentes</a></li>
+                        </ul>
+                    </nav><!-- .nav-footer -->
+                </div>
+                <div class="large-3 columns">
+                    <div class="uplink text-right">
+                        <a href="#" title="Volver arriba">
+                            <object id="topup-link" type="image/svg+xml" data="img/icons/alt_toup.svg"></object>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div><!-- .sub-footer -->
-<footer class="footer">
-    <div class="row">
-        <div class="small-6 large-centered columns text-center">
-            Clan.zagales. <a href="#">info@email.com</a>
-            <p>&nbsp;</p>
-        </div>
-    </div>
-</footer>
+        </div><!-- .sub-footer -->
+        <footer class="footer">
+            <div class="row">
+                <div class="small-6 large-centered columns text-center">
+                    Clan.zagales. <a href="#">info@email.com</a>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </footer>
 
-<!-- scripts -->
+        <!-- scripts -->
 
-<script src="components/jquery/jquery.min.js"></script>
-<script src="components/foundation/js/foundation.min.js"></script>
+        <script src="components/jquery/jquery.min.js"></script>
+        <script src="components/foundation/js/foundation.min.js"></script>
 
 
-<script src="components/angular/angular.js"></script>
-<script src="components/angular-route/angular-route.js"></script>
-<script src="components/angular-resource/angular-resource.js"></script>
-<script src="components/angular-cookies/angular-cookies.js"></script>
-<script src="components/angular-sanitize/angular-sanitize.js"></script>
-<script src="components/angular-animate/angular-animate.js"></script>
+        <script src="components/angular/angular.js"></script>
+        <script src="components/angular-route/angular-route.js"></script>
+        <script src="components/angular-resource/angular-resource.js"></script>
+        <script src="components/angular-cookies/angular-cookies.js"></script>
+        <script src="components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="components/angular-animate/angular-animate.js"></script>
 
-<!-- build:js scripts/scripts.js -->
-<script src="scripts/app.js"></script>
-<script src="scripts/controllers/main.js"></script>
-<script src="scripts/controllers/Challenge.js"></script>
-<script src="scripts/services/Challenges.js"></script>
-<script src="scripts/directives/zgChallengeMini.js"></script>
-<!-- endbuild -->
+        <!-- build:js scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/Challenge.js"></script>
+        <script src="scripts/services/Challenges.js"></script>
+        <script src="scripts/directives/zgChallengeMini.js"></script>
+        <!-- endbuild -->
 
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-    var _gaq = [
-        ['_setAccount', 'UA-XXXXX-X'],
-        ['_trackPageview']
-    ];
-    (function (d, t) {
-        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g, s)
-    }(document, 'script'));
-</script>
-</body>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq = [
+                ['_setAccount', 'UA-XXXXX-X'],
+                ['_trackPageview']
+            ];
+            (function(d, t) {
+                var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g, s)
+            }(document, 'script'));
+        </script>
+    </body>
 </html>

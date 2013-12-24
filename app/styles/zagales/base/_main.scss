@@ -1,3 +1,187 @@
 /*------------------------------------*\
-	$MAIN
+    $MAIN
 \*------------------------------------*/
+
+
+body {
+    
+    background: $base-ui-color url('../img/bg.png');
+}
+
+/* LINKS */
+
+a {
+    color: $brand-color;
+    &:hover {
+        color: tint($brand-color, 25%);
+        text-decoration: underline;
+    }
+}
+
+
+/* HEADERS */
+
+h4, h5, h6 {
+    font-family: $headingsSansFontFamily;    
+}
+
+h1, h2, h3 {
+    font-family: $headingsSerifFontFamily;
+}
+
+
+
+
+/* TOP-BAR */
+.top-bar, .top-bar-section li,  .top-bar-section li a{ 
+    background-color: $brand-color !important;
+    text-decoration: none;
+}
+.top-bar-section ul.dropdown li a {
+    background-color: tint($brand-color, 50%) !important;
+    text-decoration: none;
+}
+
+.top-bar-section li.divider {
+    border:0; 
+}
+
+/* MENU */
+
+.top-bar__buttons {
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: .5em;
+}
+
+/* TABS-BAR */
+
+.tabs-nav {
+    position: relative;
+    bottom: 1px;
+    .tabs dd {
+        margin-right: .25em;
+        a {
+            background-color: tint($brand-color, 50%);
+            color: $white;
+            @include border-bottom-radius(.5em);
+            padding-top: .5em;
+            padding-bottom: .5em;
+            text-decoration: none;        
+        }
+        &.active a {
+            background-color: $brand-color !important;
+        }
+    }
+}
+
+
+/*  CATEGORIES */
+
+
+.categories-style {
+    background-color: $yellow;
+    color: $white !important;
+    padding: .25em 1em;
+    
+}
+
+.sub-nav dt {
+    @extend h1;
+    color: $black;
+    text-transform: capitalize;
+    font-size: 1.75em;
+}
+
+.sub-nav-challenges dd {
+    margin-top: .75em;
+    margin-left: .5em;
+}
+
+.sub-nav-challenges dd a {
+    @extend .categories-style;
+    @include border-left-radius(1em);
+}
+
+.sub-nav-challenges dd.active a {
+    background-color: shade($orange, 50%);
+    @include border-left-radius(1em);
+}
+
+
+.thumb__cats li {
+    margin-left: .5em;
+    a {
+        @extend .categories-style;
+        font-size: .625em;
+        @include border-left-radius(1em);
+    }
+}
+
+/* PAGINATION */
+
+ul.pagination li.current a {
+    background-color: $brand-color;
+    
+}
+
+ul.pagination li a:hover {
+    background-color: tint($brand-color, 50%) !important;
+    color: $white;
+}
+
+
+/* OUTRO */
+
+.outro h3 {
+    color: $brand-color;
+}
+
+
+/* FOOTER */
+#topup-link {
+    height: 4em;
+    width: 4em;
+    margin-top: 2em;
+}
+
+.sub-footer {
+    height: 5em;
+}
+
+.nav-footer .side-nav li a {
+    color: $white;
+    text-decoration: none;
+}
+
+.nav-footer {
+    padding: 1em;
+    background: transparent url("/img/paper.png") top left no-repeat;
+    height: 150px;
+    a {
+        font-family: $headingsSerifFontFamily; 
+        color: $brand-color !important;
+        font-size: 1.2em;
+    }
+    ul.side-nav {
+        @include transform(rotate(-5deg))
+    }
+}
+
+footer.footer {
+    border-top: .125em solid $white;
+    background: $grayDarker;
+    color: $white;
+    padding-top: 2em;
+    padding-bottom: 0;
+}
+
+/* HACKS */
+
+/* This do clickable <object> elements */
+a {
+    display: inline-block;
+}
+object {
+    pointer-events: none;
+}

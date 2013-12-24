@@ -1,0 +1,13 @@
+/* 
+    Created on : 15-dic-2013, 14:34:02
+    Author     : Oscar Gascón <o.gascon at gmail.com>
+*/
+
+.alt g, .alt path, .alt circle{
+    fill: #fff;
+}
+
+.alt2 g, .alt2 path, .alt2 circle{
+    fill: navy;
+}
+

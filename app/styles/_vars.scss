@@ -7,10 +7,6 @@
     $BASE
 \*------------------------------------*/
 
-// Colors from twitter-bootstrap
-// --------------------------------------------------
-
-
 // Grays
 // -------------------------
 $black:                 #000 !default;
@@ -43,27 +39,22 @@ $purple:                #AB61A3 !default;
 
 
 
-// Links
-// -------------------------
-$linkColor:             $blue !default;
-$linkColorHover:        darken($linkColor, 15%) !default;
-
-
 // Typography
 // -------------------------
 $sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$headingsFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$headingsSerifFontFamily:    "Lobster Two", "Times New Roman", Times, serif !default;
+$headingsSansFontFamily:    "Roboto Condensed", Helvetica, Arial, sans-serif !default;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 
 /**
- * Base stuff
- */
+    * Base stuff
+*/
 $base-font-size:    18px;
 $base-line-height:  22px;
 
 $base-font-family:  $sansFontFamily;
 
-$base-ui-color:     #56AADF;
+$base-ui-color:     #F0F0F0;
 
 $giga-size:         76px;
 $mega-size:         68px;
@@ -79,11 +70,17 @@ $h6-size:           16px; // .zeta
 $milli-size:        14px;
 $micro-size:        12px;
 
-$brand-color:       $blue;
+$brand-color:       navy; 
+
 $brand-face:        $sansFontFamily;
 $brand-round:        3px;
 
 $base-spacing-unit: $base-line-height;
+
+// Links
+// -------------------------
+$linkColor:             $brand-color !default;
+$linkColorHover:        darken($linkColor, 15%) !default;
 
 /*------------------------------------*\
     $CUSTOM
