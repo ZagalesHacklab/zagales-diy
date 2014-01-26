@@ -11,5 +11,6 @@ before_script:
   - 'gem update --system'
   - 'bundle install'
   - 'npm install -g bower grunt-cli'
+  - 'cd frontend'
   - 'bower cache clean'
   - 'bower install'
