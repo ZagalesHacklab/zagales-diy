@@ -40,6 +40,6 @@
     "node": ">=0.10.22"
   },
   "scripts": {
-    "test": "./node_modules/.bin/grunt test --verbose"
+    "test": "grunt test --verbose"
   }
 }
