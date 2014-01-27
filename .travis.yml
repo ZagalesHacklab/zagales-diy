@@ -2,9 +2,9 @@ language: ruby
 rvm:
   - 2.0.0
 before_script:
-    - 'npm install -g yo'
     - 'bundle install'
     - 'cd frontend'
+    - 'npm install -g grunt-cli'
     - 'bower cache clean'
     - 'bower install'
     - 'cd ..'
