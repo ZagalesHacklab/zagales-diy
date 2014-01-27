@@ -3,7 +3,6 @@ rvm:
   - 2.0.0
 before_script:
     - 'npm install -g yo'
-    - 'gem update --system'
     - 'bundle install'
     - 'cd frontend'
     - 'bower cache clean'
