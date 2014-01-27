@@ -2,15 +2,15 @@ language: ruby
 rvm:
   - 2.0.0
 before_script:
-    - 'bundle install'
-    - 'cd frontend'
-    - 'npm install -g grunt-cli'
-    - 'bower cache clean'
-    - 'bower install'
-    - 'cd ..'
+  - bundle install
+  - cd frontend
+  - npm install -g grunt-cli
+  - bower cache clean
+  - bower install
+  - cd ..
+  - which grunt
 script:
-    - 'cd frontend; grunt test; cd ..'
-
-
-before_script:
-
+  - cd frontend
+  - pwd
+  - grunt test
+  - cd ..
