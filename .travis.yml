@@ -1,16 +1,17 @@
-language: node_js
-node_js:
-  - '0.10'
+language: ruby
+rvm:
+  - 2.0.0
+before_script:
+    - 'npm install -g yo'
+    - 'gem update --system'
+    - 'bundle install'
+    - 'cd frontend'
+    - 'bower cache clean'
+    - 'bower install'
+    - 'cd ..'
+script:
+    - 'cd frontend; grunt test; cd ..'
+
 
 before_script:
-  - 'rvm autolibs enable'
-  - 'rvm reload'
-  - 'rvm requirements'
-  - 'rvm install 2.0.0'
-  - 'rvm use 2.0.0'
-  - 'gem update --system'
-  - 'bundle install'
-  - 'npm install -g bower grunt-cli'
-  - 'cd frontend'
-  - 'bower cache clean'
-  - 'bower install'
+
