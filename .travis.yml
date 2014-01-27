@@ -4,13 +4,12 @@ rvm:
 before_script:
   - bundle install
   - cd frontend
+  - npm install -g bower
   - npm install -g grunt-cli
   - bower cache clean
   - bower install
   - cd ..
-  - which grunt
 script:
   - cd frontend
-  - pwd
   - grunt test
   - cd ..
