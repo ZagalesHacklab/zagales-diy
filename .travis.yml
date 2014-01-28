@@ -2,9 +2,8 @@ language: ruby
 rvm:
   - 2.0.0
 before_script:
-  - gem update --system
   - bundle install
-  - export PATH=$PATH:`pwd`/vendor/bundle/ruby/2.0.0/bin/
+  - gem install sass
   - cd frontend
   - npm install
   - npm install -g bower
