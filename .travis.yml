@@ -2,10 +2,10 @@ language: ruby
 rvm:
   - 2.0.0
 before_script:
-  - echo $PATH
   - gem update --system
   - bundle install
-  - find . -name sass
+  - find . -name compass
+  - set
   - cd frontend
   - npm install
   - npm install -g bower
