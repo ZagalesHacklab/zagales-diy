@@ -4,8 +4,7 @@ rvm:
 before_script:
   - gem update --system
   - bundle install
-  - find . -name compass
-  - set
+  - export PATH=$PATH:`pwd`/vendor/bundle/ruby/2.0.0/bin/
   - cd frontend
   - npm install
   - npm install -g bower
