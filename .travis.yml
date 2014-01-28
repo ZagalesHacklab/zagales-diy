@@ -4,6 +4,7 @@ rvm:
 before_script:
   - gem update --system
   - bundle install
+  - find . -name sass
   - cd frontend
   - npm install
   - npm install -g bower
