@@ -1,0 +1,10 @@
+# encoding: utf-8
+source 'http://rubygems.org'
+ruby '2.0.0'
+
+gem 'sinatra'
+
+:test
+gem 'rake'
+gem 'rack-test'
+gem 'rspec'
