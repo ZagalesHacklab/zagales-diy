@@ -3,9 +3,7 @@ rvm:
   - 2.0.0
 before_script:
   - gem install sass
-  - pwd
-  - ls -laR ./vendor/bundle
-  - echo $PATH
+  - PATH=$PATH:`pwd`/vendor/bundle/ruby/2.0.0/bin
   - cd frontend
   - compass
   - echo $PATH
