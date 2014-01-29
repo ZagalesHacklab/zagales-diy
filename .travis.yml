@@ -4,6 +4,7 @@ rvm:
 before_script:
   - rvm autolibs enable
   - rvm reload
+  - bundle install
 #  - PATH=$PATH:`pwd`/vendor/bundle/ruby/2.0.0/bin
 #  - echo $PATH
 #  - echo $GEM_HOME 
