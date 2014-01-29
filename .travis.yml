@@ -6,6 +6,7 @@ before_script:
   - rvm reload
   - bundle install
   - rvm gemset list
+  - gem list
   - PATH=$PATH:`pwd`/vendor/bundle/ruby/2.0.0/bin
   - BUNDLE_PATH=`pwd`/vendor/bundle
 #  - echo $PATH
