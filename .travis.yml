@@ -2,9 +2,8 @@ language: ruby
 rvm:
   - 2.0.0
 before_script:
-  - gem install sass
   - PATH=$PATH:`pwd`/vendor/bundle/ruby/2.0.0/bin
-  - rvm wrapper 1.9.3@compass --no-prefix compass
+  - rvm wrapper 2.0.0@compass --no-prefix compass
   - cd frontend
   - compass
   - echo $PATH
