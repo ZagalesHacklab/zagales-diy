@@ -2,8 +2,8 @@ language: ruby
 rvm:
   - 2.0.0
 before_script:
-  - cd frontend
   - gem install sass
+  - cd frontend
   - ls -la
   - ls -la ~
   - compass
