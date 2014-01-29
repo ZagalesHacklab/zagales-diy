@@ -3,6 +3,10 @@ rvm:
   - 2.0.0
 before_script:
   - PATH=$PATH:`pwd`/vendor/bundle/ruby/2.0.0/bin
+  - echo $PATH
+  - echo $GEM_HOME 
+  - echo $GEM_PATH
+  - echo $BUNDLE_PATH
   - find . -name "compass"
   - cd frontend
   - compass
