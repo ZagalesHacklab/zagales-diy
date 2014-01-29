@@ -3,6 +3,7 @@ rvm:
   - 2.0.0
 before_script:
   - gem install sass
+  - echo $PATH
   - cd frontend
   - ls -la
   - ls -la ~
