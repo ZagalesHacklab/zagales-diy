@@ -129,6 +129,7 @@ module.exports = function (grunt) {
     },
     compass: {
       options: {
+        bundleExec: true,
         sassDir: '<%= yeoman.app %>/styles',
         cssDir: '.tmp/styles',
         imagesDir: '<%= yeoman.app %>/images',
