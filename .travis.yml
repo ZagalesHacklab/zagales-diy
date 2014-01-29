@@ -4,6 +4,8 @@ rvm:
 before_script:
   - cd frontend
   - gem install sass
+  - ls -la
+  - ls -la ~
   - compass
   - echo $PATH
   - npm install
