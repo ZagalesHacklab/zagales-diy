@@ -3,7 +3,7 @@ rvm:
   - 2.0.0
 before_script:
   - PATH=$PATH:`pwd`/vendor/bundle/ruby/2.0.0/bin
-  - rvm wrapper 2.0.0@compass --no-prefix compass
+  - find . -name "compass"
   - cd frontend
   - compass
   - echo $PATH
