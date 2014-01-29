@@ -5,6 +5,7 @@ before_script:
   - cd frontend
   - gem install sass
   - compass
+  - echo $PATH
   - npm install
   - npm install -g bower
   - npm install -g grunt-cli
