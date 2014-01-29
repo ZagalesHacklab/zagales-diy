@@ -3,11 +3,10 @@ rvm:
   - 2.0.0
 before_script:
   - gem install sass
-  - ls -la ./vendor/bundle
+  - pwd
+  - ls -laR ./vendor/bundle
   - echo $PATH
   - cd frontend
-  - ls -la
-  - ls -la ~
   - compass
   - echo $PATH
   - npm install
