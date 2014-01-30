@@ -2,9 +2,7 @@ language: ruby
 rvm:
   - 2.0.0
 before_script:
-  - cd backend
-  - bundle install
-  - cd ../frontend
+  - cd frontend
   - bundle exec compass
   - npm install
   - npm install -g bower
