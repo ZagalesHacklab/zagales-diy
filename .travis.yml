@@ -4,7 +4,9 @@ rvm:
 before_script:
   - rvm autolibs enable
   - rvm reload
-  - cd frontend
+  - cd backend
+  - bundle install
+  - cd ../frontend
   - bundle exec compass
   - npm install
   - npm install -g bower
