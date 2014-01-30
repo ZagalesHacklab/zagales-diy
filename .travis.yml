@@ -6,7 +6,7 @@ before_script:
   #- rvm reload
   - cd backend
   - export BUNDLE_GEMFILE=$PWD/backend/Gemfile
-  - bundle install --development
+  - bundle install
   - cd ../frontend
   - bundle exec compass
   - npm install
