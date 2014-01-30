@@ -5,7 +5,7 @@ before_script:
   - rvm autolibs enable
   - rvm reload
   - cd backend
-  - bundle install --test
+  - bundle install --deployment
   - cd ../frontend
   - bundle exec compass
   - npm install
