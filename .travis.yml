@@ -2,8 +2,8 @@ language: ruby
 rvm:
   - 2.0.0
 before_script:
-  - rvm autolibs enable
-  - rvm reload
+  #- rvm autolibs enable
+  #- rvm reload
   - cd backend
   - bundle install --deployment
   - cd ../frontend

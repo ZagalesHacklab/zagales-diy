@@ -5,8 +5,9 @@ ruby '2.0.0'
 gem 'sinatra'
 gem 'activerecord'
 
-:test
-gem 'rake'
-gem 'rack-test'
-gem 'rspec'
+group :test do
+  gem 'rake'
+  gem 'rack-test'
+  gem 'rspec'
+end
 
