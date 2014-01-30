@@ -16,7 +16,9 @@ before_script:
   - bower install
   - cd ..
 script:
+  - export BUNDLE_GEMFILE=$PWD/Gemfile
   - cd frontend
   - grunt test
   - cd ../backend
+  - export BUNDLE_GEMFILE=$PWD/backend/Gemfile
   - rspec spec
