@@ -2,14 +2,9 @@ language: ruby
 rvm:
   - 2.0.0
 before_script:
-  #- rvm autolibs enable
-  #- rvm reload
   - cd backend
-  - export BUNDLE_GEMFILE=$PWD/Gemfile
   - bundle install
   - cd ../frontend
-  - export BUNDLE_GEMFILE=$PWD/Gemfile
-  - bundle install
   - bundle exec compass
   - npm install
   - npm install -g bower
@@ -18,10 +13,7 @@ before_script:
   - bower install
   - cd ..
 script:
-  - cd $PWD
-  - export BUNDLE_GEMFILE=$PWD/Gemfile
   - cd frontend
   - grunt test
   - cd ../backend
-  - export BUNDLE_GEMFILE=$PWD/Gemfile
   - rspec spec
