@@ -5,6 +5,7 @@ before_script:
   #- rvm autolibs enable
   #- rvm reload
   - cd backend
+  - export BUNDLE_GEMFILE=$PWD/backend/Gemfile
   - bundle install --deployment
   - cd ../frontend
   - bundle exec compass
