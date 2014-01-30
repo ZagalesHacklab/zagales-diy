@@ -2,8 +2,6 @@ language: ruby
 rvm:
   - 2.0.0
 before_script:
-  - bundle exec compass
-  - bundle exec rspec
   - cd frontend
   - npm install
   - npm install -g bower
@@ -15,4 +13,4 @@ script:
   - cd frontend
   - grunt test
   - cd ../backend
-  - rspec spec
+  - bundle exec rspec spec
