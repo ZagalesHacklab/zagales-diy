@@ -4,20 +4,8 @@ rvm:
 before_script:
   - rvm autolibs enable
   - rvm reload
-#  - bundle install
-#  - rvm gemset list
-#  - gem list
-#  - bundle exec gem list
-#  - PATH=$PATH:`pwd`/vendor/bundle/ruby/2.0.0/bin
-#  - BUNDLE_PATH=`pwd`/vendor/bundle
-#  - echo $PATH
-#  - echo $GEM_HOME 
-#  - echo $GEM_PATH
-#  - echo $BUNDLE_PATH
-#  - find . -name "compass"
   - cd frontend
   - bundle exec compass
-  - echo $PATH
   - npm install
   - npm install -g bower
   - npm install -g grunt-cli
@@ -27,4 +15,5 @@ before_script:
 script:
   - cd frontend
   - grunt test
-  - cd ..
+  - cd ../backend
+  - rspec spec

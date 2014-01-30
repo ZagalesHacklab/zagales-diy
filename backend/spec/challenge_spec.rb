@@ -1,7 +1,7 @@
 ENV['RACK_ENV'] = 'test'
 
-require '../api/challenge'
-require 'rspec'
+require 'spec_helper'
+require_relative '../api/challenge'
 require 'rack/test'
 
 describe 'The HelloWorld App' do
