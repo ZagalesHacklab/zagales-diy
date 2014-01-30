@@ -2,5 +2,6 @@
 source 'http://rubygems.org'
 ruby '2.0.0'
 
-import 'frontend'
-import 'backend'
+gem 'compass'
+#import 'frontend'
+#import 'backend'
