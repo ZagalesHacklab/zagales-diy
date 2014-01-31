@@ -7,6 +7,8 @@ class ZagalesApi < Sinatra::Base
     challenge1 =Challenge.new()
     challenge1.name = 'pepe'
 
+    challenge1.save!
+
     challenge2 = Challenge.new()
     challenge2.name = 'lolo'
 

@@ -15,7 +15,7 @@ class ZagalesApi < Sinatra::Base
   configure do
     set :app_file, __FILE__
 
-    DataMapper.setup(:in_memory, :adapter => 'in_memory')
+    DataMapper.setup(:default, :adapter => 'in_memory')
   end
 
   configure :development do

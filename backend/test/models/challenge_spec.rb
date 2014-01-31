@@ -6,6 +6,9 @@ require 'rack/test'
 describe 'challenge model' do
   include Rack::Test::Methods
 
+  before(:all) do
+    DataMapper.setup(:default, :adapter => 'in_memory')
+  end
 
   it 'should exist' do
     challenge = Challenge.new
@@ -25,8 +28,10 @@ describe 'challenge model' do
     actual = Challenge.get(expected.id)
 
     expect(actual.name).to be expected.name
-
-
+    expect(actual.image).to eq expected.image
+    expect(actual.username).to be expected.username
+    expect(actual.avatar).to eq expected.avatar
+    expect(actual.tags).to be expected.tags
 
   end
 
