@@ -17,5 +17,9 @@ describe 'challenges routes' do
     expect(last_response.content_type).to include 'application/json;charset=utf-8'
   end
 
-
+	it 'responds support cors domain requests' do
+		get '/api/challenges'
+		expect(last_response.headers).to include 'Access-Control-Allow-Origin'
+		expect(last_response.headers).to include 'Access-Control-Allow-Methods'
+	end
 end
