@@ -1,0 +1,86 @@
+<div class="row">
+    <div class="large-12 columns">
+        <div class="tabs-nav">
+            <dl class="tabs" data-tab>
+                <dd><a href="#projects">Retos</a></dd>
+                <dd><a href="#howtoplay">Cómo jugar</a></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<article class= "challenge">
+    <div class="row">
+        <div class="large-9 columns">
+            <header>
+                <h1 class="challenge__title">Proponer un reto</h1>
+            </header>
+            <div class="row">
+                <div class="large-12 columns">
+                    <section class="challenge__form">
+                        <form>
+                            <div class="row">
+                                <div class="medium-offset-1 large-10 columns">
+                                    <!-- Title -->
+                                    <label>Título
+                                        <input type="text" name="challenge-title" placeholder="Introduce un nombre para tu reto" />
+                                    </label><!-- End Title -->
+                                    <!-- Description -->
+                                    <label>Descripción
+                                        <textarea id="challenge-description" name="challenge-description">
+                                        </textarea>
+                                    </label><!-- End Description -->
+                                    <!-- Tags -->
+                                    <label>Etiquetas
+                                        <input type="text" placeholder="Introduce etiquetas con las que identificar tu reto" />                           
+                                    </label><!-- End Tags -->
+                                    <div class="row"><!-- Difficulty & Date row -->
+                                        <div class="large-8 columns">
+                                            <!-- Difficulty -->
+                                            <label>Dificultad</label>
+                                            <object type="image/svg+xml" data="/styles/img/icons/alt3_paperplane.svg" class="challenge__form__rating--minimum"></object>
+                                            <fieldset class="rating">
+                                                <input type="radio" id="star5" name="challenge-rating" value="5" /><label for="star5" title="Imposible">5 stars</label>
+                                                <input type="radio" id="star4" name="challenge-rating" value="4" /><label for="star4" title="Uf, muy complicado">4 stars</label>
+                                                <input type="radio" id="star3" name="challenge-rating" value="3" /><label for="star3" title="Lleva un rato">3 stars</label>
+                                                <input type="radio" id="star2" name="challenge-rating" value="2" /><label for="star2" title="Sencillo">2 stars</label>
+                                                <input type="radio" id="star1" name="challenge-rating" value="1" /><label for="star1" title="Tirado">1 star</label>
+                                            </fieldset><!-- End Difficulty -->
+                                            <object type="image/svg+xml" data="/styles/img/icons/alt3_fire.svg" class="challenge__form__rating--maximum"></object>
+                                        </div>
+
+                                        <div class="large-4 columns">
+                                            <!-- Date -->
+                                            <label>Fecha máxima
+                                                <input type="date" name="challenge-end-time" step="1" min="2014-10-08" value="2013-10-08" />
+                                            </label><!-- End Date -->
+                                        </div>
+                                    </div><!-- End Difficulty & Date row -->
+                                    <label for="pics">Imágenes</label><!-- Pics -->
+                                    <ul class="row"><!-- Pics Row -->
+                                        <li class="large-4 columns">
+                                            <img ng-src="http://ima.gs/ddd/999/999/150x100.png" alt="thumb" src="http://ima.gs/ddd/999/999/150x100.png">
+                                        </li>
+                                        <li class="large-4 columns">
+                                            <img ng-src="http://ima.gs/ddd/999/999/150x100.png" alt="thumb" src="http://ima.gs/ddd/999/999/150x100.png">
+                                        </li>
+                                        <li class="large-4 columns">
+                                            <div class="challenge__form__pics-upload">
+                                                <input type="file" multiple="multiple" name="pics" id="pics" />
+                                                <div class="challenge__form__pics-upload__description">
+                                                    Arrastra o haz click para añadir imágenes<br />
+                                                    <i class="fa fa-camera fa-2x"></i>
+                                                </div>
+                                            </div>
+                                        </li><!-- .challenge__form__pics__upload -->
+                                    </ul><!-- End Pics Row -->
+                                    <button type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </section><!--.challenge__form-->
+                </div>
+            </div>
+        </div>
+    </div>
+</article><!--.challenge__detail-->
+
