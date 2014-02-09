@@ -20,6 +20,9 @@
                         <form>
                             <div class="row">
                                 <div class="medium-offset-1 large-10 columns">
+                                    <!-- Date -->
+                                    <input type="hidden" name="challenge-date" value="" />
+                                    <!-- End Date -->
                                     <!-- Title -->
                                     <label>Título
                                         <input type="text" name="challenge-title" placeholder="Introduce un nombre para tu reto" />
@@ -33,29 +36,21 @@
                                     <label>Etiquetas
                                         <input type="text" placeholder="Introduce etiquetas con las que identificar tu reto" />                           
                                     </label><!-- End Tags -->
-                                    <div class="row"><!-- Difficulty & Date row -->
-                                        <div class="large-8 columns">
-                                            <!-- Difficulty -->
-                                            <label>Dificultad</label>
-                                            <object type="image/svg+xml" data="/styles/img/icons/alt3_paperplane.svg" class="challenge__form__rating--minimum"></object>
-                                            <fieldset class="rating">
-                                                <input type="radio" id="star5" name="challenge-rating" value="5" /><label for="star5" title="Imposible">5 stars</label>
-                                                <input type="radio" id="star4" name="challenge-rating" value="4" /><label for="star4" title="Uf, muy complicado">4 stars</label>
-                                                <input type="radio" id="star3" name="challenge-rating" value="3" /><label for="star3" title="Lleva un rato">3 stars</label>
-                                                <input type="radio" id="star2" name="challenge-rating" value="2" /><label for="star2" title="Sencillo">2 stars</label>
-                                                <input type="radio" id="star1" name="challenge-rating" value="1" /><label for="star1" title="Tirado">1 star</label>
-                                            </fieldset><!-- End Difficulty -->
-                                            <object type="image/svg+xml" data="/styles/img/icons/alt3_fire.svg" class="challenge__form__rating--maximum"></object>
-                                        </div>
-
-                                        <div class="large-4 columns">
-                                            <!-- Date -->
-                                            <label>Fecha máxima
-                                                <input type="date" name="challenge-end-time" step="1" min="2014-10-08" value="2013-10-08" />
-                                            </label><!-- End Date -->
-                                        </div>
-                                    </div><!-- End Difficulty & Date row -->
-                                    <label for="pics">Imágenes</label><!-- Pics -->
+                                    <!-- Difficulty -->
+                                    <label>Dificultad</label>
+                                    <object type="image/svg+xml" data="/styles/img/icons/alt3_paperplane.svg" class="challenge__form__rating--minimum"></object>
+                                    <fieldset class="rating">
+                                        <input type="radio" id="star5" name="challenge-rating" value="5" /><label for="star5" title="Imposible">5 stars</label>
+                                        <input type="radio" id="star4" name="challenge-rating" value="4" /><label for="star4" title="Uf, muy complicado">4 stars</label>
+                                        <input type="radio" id="star3" name="challenge-rating" value="3" /><label for="star3" title="Lleva un rato">3 stars</label>
+                                        <input type="radio" id="star2" name="challenge-rating" value="2" /><label for="star2" title="Sencillo">2 stars</label>
+                                        <input type="radio" id="star1" name="challenge-rating" value="1" /><label for="star1" title="Tirado">1 star</label>
+                                    </fieldset><!-- End Difficulty -->
+                                    <object type="image/svg+xml" data="/styles/img/icons/alt3_fire.svg" class="challenge__form__rating--maximum"></object>
+                                    <!-- End Difficulty -->
+                                    <div class="clearfix"></div>
+                                    <!-- Pics -->
+                                    <label for="pics">Imágenes</label>
                                     <ul class="row"><!-- Pics Row -->
                                         <li class="large-4 columns">
                                             <img ng-src="http://ima.gs/ddd/999/999/150x100.png" alt="thumb" src="http://ima.gs/ddd/999/999/150x100.png">
@@ -72,7 +67,7 @@
                                                 </div>
                                             </div>
                                         </li><!-- .challenge__form__pics__upload -->
-                                    </ul><!-- End Pics Row -->
+                                    </ul><!-- End Pics -->
                                     <button type="submit">Enviar</button>
                                 </div>
                             </div>
