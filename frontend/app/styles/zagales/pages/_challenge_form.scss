@@ -137,9 +137,6 @@ fieldset.rating {
 }
 
 .challenge__form__rating--maximum {
-    transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg); /* IE 9 */
-    -webkit-transform: rotate(-45deg);
     float: left;
     color: $grayDark;
     font-size: 2.5em;
