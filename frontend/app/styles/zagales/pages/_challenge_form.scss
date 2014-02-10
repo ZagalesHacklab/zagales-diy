@@ -137,9 +137,11 @@ fieldset.rating {
 }
 
 .challenge__form__rating--maximum {
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg);
     float: left;
-    height: 2.5em;
-    width: 2.5em;
+    color: $grayLight;
 }
 
 
