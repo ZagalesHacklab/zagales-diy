@@ -30,4 +30,10 @@ class ZagalesApi < Sinatra::Base
     set :raise_errors, false #false will show nicer error page
     set :show_exceptions, false #true will ignore raise_errors and display backtrace in browser
   end
+
+  before do
+    #headers 'Access-Control-Allow-Origin' => 'http://localhost:9000',
+    headers 'Access-Control-Allow-Origin' => '*',
+            'Access-Control-Allow-Methods' => ['OPTIONS', 'GET', 'POST']
+  end
 end

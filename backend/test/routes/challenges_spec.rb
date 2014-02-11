@@ -7,7 +7,7 @@ describe 'challenges routes' do
   include Rack::Test::Methods
 
   def app
-    ZagalesApi.new
+    ZagalesApi
   end
 
   it 'responds to /api/challenges uri' do
