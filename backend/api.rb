@@ -15,7 +15,12 @@ class ZagalesApi < Sinatra::Base
   configure do
     set :app_file, __FILE__
 
+    #TODO: use persistent database, remove mocks
     DataMapper.setup(:default, :adapter => 'in_memory')
+    challenges = JSON.parse(open('../frontend/test/mocks/challenges.json').read)
+    challenges.each do |challenge|
+      Challenge.new(challenge).save!
+    end
   end
 
   configure :development do

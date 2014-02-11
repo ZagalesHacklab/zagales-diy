@@ -8,7 +8,7 @@ class Challenge
   include DataMapper::Resource
 
   property :id, Serial
-  property :name, Text
+  property :title, Text
   property :image, URI
   property :username, Text
   property :avatar, URI

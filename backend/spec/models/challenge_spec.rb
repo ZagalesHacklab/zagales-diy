@@ -17,7 +17,7 @@ describe 'challenge model' do
 
   it 'should propper store attributes' do
     expected = Challenge.new
-    expected.name='dummy challenge'
+    expected.title='dummy challenge'
     expected.image='http://dummy.com/image.png'
     expected.username='liborio'
     expected.avatar='http://dummy.com/avatar.png'
@@ -27,7 +27,7 @@ describe 'challenge model' do
 
     actual = Challenge.get(expected.id)
 
-    expect(actual.name).to be expected.name
+    expect(actual.title).to be expected.title
     expect(actual.image).to eq expected.image
     expect(actual.username).to be expected.username
     expect(actual.avatar).to eq expected.avatar
