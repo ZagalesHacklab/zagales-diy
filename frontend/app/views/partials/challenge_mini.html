@@ -15,11 +15,8 @@
 
         <div class="thumb__cats right">
             <ul class="inline-list">
-                <li>
-                    <a href="#">cat 1</a>
-                </li>
-                <li>
-                    <a href="#">cat 2</a>
+                <li ng-repeat="tag in challenge.tags">
+                    <a href="#">{{tag}}</a>
                 </li>
             </ul>
         </div>
