@@ -3,6 +3,7 @@
 
 require 'sinatra/base'
 require 'json'
+require 'data_mapper'
 
 require_relative 'models/init'
 require_relative 'routes/init'
@@ -15,12 +16,8 @@ class ZagalesApi < Sinatra::Base
   configure do
     set :app_file, __FILE__
 
-    #TODO: use persistent database, remove mocks
-    DataMapper.setup(:default, :adapter => 'in_memory')
-    challenges = JSON.parse(open('../frontend/test/mocks/challenges.json').read)
-    challenges.each do |challenge|
-      Challenge.new(challenge).save!
-    end
+    db = File.join(File.dirname(__FILE__), 'zagales-diy.db')
+    DataMapper.setup(:default, "sqlite3://#{db}")
   end
 
   configure :development do

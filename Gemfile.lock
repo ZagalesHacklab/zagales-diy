@@ -8,6 +8,8 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    data_objects (0.10.13)
+      addressable (~> 2.1)
     datamapper (1.2.0)
       dm-aggregates (~> 1.2.0)
       dm-constraints (~> 1.2.0)
@@ -25,6 +27,9 @@ GEM
       dm-core (~> 1.2.0)
     dm-core (1.2.1)
       addressable (~> 2.3)
+    dm-do-adapter (1.2.0)
+      data_objects (~> 0.10.6)
+      dm-core (~> 1.2.0)
     dm-migrations (1.2.0)
       dm-core (~> 1.2.0)
     dm-serializer (1.2.2)
@@ -33,6 +38,9 @@ GEM
       json (~> 1.6)
       json_pure (~> 1.6)
       multi_json (~> 1.0)
+    dm-sqlite-adapter (1.2.0)
+      dm-do-adapter (~> 1.2.0)
+      do_sqlite3 (~> 0.10.6)
     dm-timestamps (1.2.0)
       dm-core (~> 1.2.0)
     dm-transactions (1.2.0)
@@ -47,6 +55,8 @@ GEM
       uuidtools (~> 2.1)
     dm-validations (1.2.0)
       dm-core (~> 1.2.0)
+    do_sqlite3 (0.10.13)
+      data_objects (= 0.10.13)
     fastercsv (1.5.5)
     fssm (0.2.10)
     json (1.8.1)
@@ -83,6 +93,7 @@ PLATFORMS
 DEPENDENCIES
   compass
   datamapper
+  dm-sqlite-adapter
   rack-test
   rake
   rspec
