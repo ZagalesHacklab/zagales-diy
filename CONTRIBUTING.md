@@ -33,7 +33,7 @@ Cuentanosla en nuestro [grupo de Google+](https://plus.google.com/u/1/communitie
 
 ## Instalación del entorno de desarrollo ##
 
-En el fichero [INSTALL.md](https://github.com/ZagalesHacklab/zagales-diy/INSTALL.md) tienes las instrucciones para
+En el fichero [INSTALL.md](./INSTALL.md) tienes las instrucciones para
 instalarte el entorno de desarrollo
 
 ## Código con estilo ##
