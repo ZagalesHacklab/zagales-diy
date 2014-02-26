@@ -9,4 +9,11 @@ angular.module('zagalesDiyApp')
       rating: null,
       images: []
     };
+
+    $scope.saveChallenge = function() {
+      // TODO
+      console.log('saving...');
+      console.log($scope.challenge);
+    };
+
   });

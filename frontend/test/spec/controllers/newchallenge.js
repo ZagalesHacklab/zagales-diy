@@ -25,4 +25,8 @@ describe('Controller: NewChallengeCtrl', function () {
     expect(scope.challenge).to.have.property('rating');
     expect(scope.challenge).to.have.property('images');
   });
+
+  it('should have a method to save the info', function() {
+    expect(scope).to.respondTo('saveChallenge');
+  });
 });
