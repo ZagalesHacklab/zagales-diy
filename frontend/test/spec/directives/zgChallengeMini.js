@@ -58,12 +58,8 @@ describe('Directive: zgChallengeMini', function () {
 
     it('should have tags', inject(function () {
         var tags = element.find('div.thumb__cats a');
-
         expect(tags).to.have.length(2);
-
-      console.log(tags.eq(0).text());
-
-        expect(tags.eq(0).text()).to.equal('cat 1');
-        expect(tags.eq(1).text()).to.equal('cat 2');
+        expect(tags.eq(0).text()).to.equal('foo');
+        expect(tags.eq(1).text()).to.equal('bar');
     }));
 });

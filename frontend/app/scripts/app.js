@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zagalesDiyApp', ['ngRoute', 'ngAnimate', 'ngResource'])
+angular.module('zagalesDiyApp', ['ngRoute', 'ngAnimate', 'ngResource', 'textAngular'])
         .config(function($routeProvider, $locationProvider) {
             $locationProvider.html5Mode(false);
 
@@ -15,7 +15,7 @@ angular.module('zagalesDiyApp', ['ngRoute', 'ngAnimate', 'ngResource'])
                     })
                     .when('/NewChallenge', {
                         templateUrl: 'views/challenge_form.html',
-                        controller: 'ChallengeCtrl'
+                        controller: 'NewChallengeCtrl'
                     })
                     .otherwise({
                         redirectTo: '/'
@@ -27,6 +27,6 @@ angular.module('zagalesDiyApp', ['ngRoute', 'ngAnimate', 'ngResource'])
             });
         })
         .constant('config', {
-            CHALLENGES_URL: 'mocks/challenges.json'
-                    //CHALLENGES_URL: 'http://localhost:9292/api/challenges' // real api url
+            // CHALLENGES_URL: 'mocks/challenges.json'
+            CHALLENGES_URL: 'http://localhost:9393/api/challenges' // real api url
         });

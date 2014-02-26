@@ -13,13 +13,13 @@ las dependencias en los siguientes paso).
 
 Despues de clonar el repositorio ejecuta (desde la carpeta del repositorio):
 
-npm install
-
-./node_modules/.bin/bower install
+    npm install
+    ./node_modules/.bin/bower install
 
 Para ejecutar los test:
 
-./node_modules/.bin/grunt test
+    ./node_modules/.bin/grunt test
+
 
 ####Instalación del entorno ruby:
 #####Instalando Ruby con RbEnv:
@@ -60,3 +60,38 @@ Para "automatizar" la instalación de gemas y que todos tengamos las gemas que h
 > > (Después de instalar nuevas gemas o nuevas versiones de ruby en rbenv hay que ejecutar el comando: <code>rbenv rehash</code>)
 >######Comandos:
 > > Para instalar todas las gemas del Gemfile <code>bundle install</code>
+
+###Backend
+
+Instalar dependencias y configurar DB
+
+    $ cd backend
+    $ bundle install
+    $ rake db:create
+    $ rake db:seed
+
+Arrancar servidor
+
+    $ shotgun
+
+Ejecutar tests
+
+    $ rake spec
+
+###Frontend
+
+Instalar dependencias
+
+    $ cd frontend
+    $ npm install
+    $ bower install
+
+Arrancar servidor
+
+    $ grunt server
+
+Ejecutar tests
+
+    $ grunt test
+    # o para relanzar tests vigilando cambios en ficheros:
+    $ karma start
