@@ -20,9 +20,12 @@
                         <form>
                             <div class="row">
                                 <div class="medium-offset-1 large-10 columns">
+
+                                    {{ challenge }}
+
                                     <!-- Title -->
                                     <label>Título
-                                        <input type="text" name="challenge-title" placeholder="Introduce un nombre para tu reto" />
+                                        <input type="text" ng-model="challenge.title" placeholder="Introduce un nombre para tu reto" />
                                     </label><!-- End Title -->
                                     <!-- Description -->
                                     <label>Descripción
@@ -30,17 +33,17 @@
                                     </label><!-- End Description -->
                                     <!-- Tags -->
                                     <label>Etiquetas
-                                        <input type="text" placeholder="Introduce etiquetas con las que identificar tu reto" />                           
+                                        <input type="text" ng-model="challenge.label" placeholder="Introduce etiquetas con las que identificar tu reto" />
                                     </label><!-- End Tags -->
                                     <!-- Difficulty -->
                                     <label>Dificultad</label>
                                     <object type="image/svg+xml" data="/styles/img/icons/alt3_paperplane2.svg" class="challenge__form__rating--minimum"></object>
                                     <fieldset class="rating">
-                                        <input type="radio" id="star5" name="challenge-rating" value="5" /><label for="star5" title="Imposible">5 stars</label>
-                                        <input type="radio" id="star4" name="challenge-rating" value="4" /><label for="star4" title="Uf, muy complicado">4 stars</label>
-                                        <input type="radio" id="star3" name="challenge-rating" value="3" /><label for="star3" title="Lleva un rato">3 stars</label>
-                                        <input type="radio" id="star2" name="challenge-rating" value="2" /><label for="star2" title="Sencillo">2 stars</label>
-                                        <input type="radio" id="star1" name="challenge-rating" value="1" /><label for="star1" title="Tirado">1 star</label>
+                                        <input type="radio" id="star5" ng-model="challenge.rating" value="5" /><label for="star5" title="Imposible">5 stars</label>
+                                        <input type="radio" id="star4" ng-model="challenge.rating" value="4" /><label for="star4" title="Uf, muy complicado">4 stars</label>
+                                        <input type="radio" id="star3" ng-model="challenge.rating" value="3" /><label for="star3" title="Lleva un rato">3 stars</label>
+                                        <input type="radio" id="star2" ng-model="challenge.rating" value="2" /><label for="star2" title="Sencillo">2 stars</label>
+                                        <input type="radio" id="star1" ng-model="challenge.rating" value="1" /><label for="star1" title="Tirado">1 star</label>
                                     </fieldset><!-- End Difficulty -->
                                     <i class="fa fa-rocket challenge__form__rating--maximum"></i>
                                     <!-- End Difficulty -->

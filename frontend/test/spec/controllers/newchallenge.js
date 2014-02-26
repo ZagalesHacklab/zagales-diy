@@ -5,18 +5,24 @@ describe('Controller: NewChallengeCtrl', function () {
   // load the controller's module
   beforeEach(module('zagalesDiyApp'));
 
-  var NewchallengeCtrl,
+  var NewChallengeCtrl,
     scope;
+
+  var expect = chai.expect;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    NewchallengeCtrl = $controller('NewchallengeCtrl', {
+    NewChallengeCtrl = $controller('NewChallengeCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should have a scope container for the new challenge', function () {
+    expect(scope.challenge).to.have.property('title');
+    expect(scope.challenge).to.have.property('description');
+    expect(scope.challenge).to.have.property('tags');
+    expect(scope.challenge).to.have.property('rating');
+    expect(scope.challenge).to.have.property('images');
   });
 });

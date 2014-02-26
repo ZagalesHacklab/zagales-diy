@@ -28,6 +28,7 @@ module.exports = function (config) {
 				'components/angular-animate/angular-animate.js',
 				'components/angular-sanitize/angular-sanitize.js',
 				'components/angular-resource/angular-resource.js',
+				'components/textAngular/textAngular.js',
 				'scripts/*.js',
 				'scripts/**/*.js',
 				'../test/mock/**/*.js',
