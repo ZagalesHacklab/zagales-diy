@@ -13,5 +13,4 @@ script:
   - cd frontend
   - grunt test
   - cd ../backend
-  - bundle exec rake db:create
   - bundle exec rspec

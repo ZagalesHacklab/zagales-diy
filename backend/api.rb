@@ -15,13 +15,12 @@ class ZagalesApi < Sinatra::Base
 
   configure do
     set :app_file, __FILE__
-
-    db = File.join(File.dirname(__FILE__), 'zagales-diy.db')
-    DataMapper.setup(:default, "sqlite3://#{db}")
   end
 
   configure :development do
     enable :logging, :dump_errors, :raise_errors
+    db = File.join(File.dirname(__FILE__), 'zagales-diy.db')
+    DataMapper.setup(:default, "sqlite3://#{db}")
   end
 
   configure :qa do
