@@ -1,0 +1,22 @@
+require 'rspec/core'
+require 'rspec/core/rake_task'
+require './api.rb'
+ 
+task :default => :spec
+ 
+desc "Run all specs in spec directory (excluding plugin specs)"
+RSpec::Core::RakeTask.new(:spec)
+
+
+namespace :db do
+  task :create do
+    DataMapper.auto_migrate!
+  end
+
+  task :seed do
+    challenges = JSON.parse(open('../frontend/test/mocks/challenges.json').read)
+    challenges.each do |challenge|
+      Challenge.new(challenge).save!
+    end
+  end
+end

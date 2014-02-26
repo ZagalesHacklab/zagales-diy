@@ -4,6 +4,7 @@
 *.iml
 atlassian-ide-plugin.xml
 nbproject
+tags
 
 # Frontend
 
@@ -19,3 +20,4 @@ frontend/node_modules
 
 *.rbc
 *.gem
+backend/zagales-diy.db
