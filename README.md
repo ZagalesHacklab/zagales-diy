@@ -24,3 +24,15 @@ Zagales DIY es un proyecto de Agile Aragon con el que prentendemos practicar con
 ¿Quieres desarrollar con nosotros? ¿quieres sugerir una mejora? ¿has encontrado un bug?
 
 Revisa nuestra [guía para contributors](./CONTRIBUTING.md)
+
+## Agradecimientos ##
+
+A todos los [**contribuitors**](https://github.com/orgs/ZagalesHacklab/members) por cedernos su tiempo, ganas y conocimiento de forma desinteresada.
+
+[**Superspacio**](http://superespacio.es/), [**Hispalinux**](http://hispalinux.es/node/670) y [**utopic_us**](http://www.utopicus.es/en/spaces/utopicus-en-zaragoza) (RIP) :( por dejarnos sitio para currar.
+
+[**Javier Gomez**](https://twitter.com/jgomezz) y su empresa [**Ricoh**](http://www.ricoh.es/) por montar su [**workshop solidario**](http://www.xgomez.com/2013/11/global-day-of-code-retreat-extreme-solid-workshop-solidario/).
+
+La gente de [**Jetbrains**](http://www.jetbrains.com/) por la licencia del [**IntelliJ**](http://www.jetbrains.com/idea/).
+
+**A todos los peques con ganas de divertirse con la tecnología**, porque sin nuestros [**zagales**](http://zagales-hacklab.org/) este proyecto nunca habría existido.
