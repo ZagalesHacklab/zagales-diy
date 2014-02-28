@@ -5,6 +5,9 @@
 atlassian-ide-plugin.xml
 nbproject
 tags
+# Otros
+.DS_Store
+npm-debug.log
 
 # Frontend
 
