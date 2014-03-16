@@ -61,6 +61,21 @@ Para "automatizar" la instalación de gemas y que todos tengamos las gemas que h
 >######Comandos:
 > > Para instalar todas las gemas del Gemfile <code>bundle install</code>
 
+####Maquina Virtual:
+
+También podéis usar la maquina virtual que hemos creado para facilitar toda la instalación/configuración. Esta creada en VirtualBox e incluye todo lo necesario para hacer funcionar el proyecto.
+
+> Link:
+> > https://mega.co.nz/#!GwxRSA7L
+
+> Clave:
+> > 8HFE3jEL-j8zgYPt-MGeMgavq5JeJlS_XrQbV6xUjqY
+
+> Acceso a la maquina virtual:
+> > Usuario: zagales
+
+> > Contraseña: secret
+
 ###Backend
 
 Instalar dependencias y configurar DB
