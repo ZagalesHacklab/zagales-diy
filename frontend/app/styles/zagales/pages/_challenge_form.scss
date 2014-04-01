@@ -36,11 +36,12 @@
 
 .challenge__form li {
     list-style-type: none;
+    margin-bottom: 1rem;
 }
 
 .challenge__form__pics-upload {
     color: tint($brand-color, 75%);
-    height: 100px;
+    height: 140px;
     background-color: tint($brand-color, 95%);
     border: .25em dotted tint($brand-color, 75%);
     border-radius: .5em;
@@ -48,7 +49,7 @@
     text-align: center;
     input {
         cursor: pointer;
-        height: 100px;
+        height: 140px;
         opacity: 0;
         position: absolute;
         right: 0;
@@ -71,6 +72,7 @@
 
 .challenge__form button[type="submit"] {
     float: right;
+    margin-right: 1rem;
     background-color: tint($brand-color, 50%);
     &:hover {
         background-color: $brand-color;            
