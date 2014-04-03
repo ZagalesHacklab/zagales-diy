@@ -23,6 +23,11 @@ class ZagalesApi < Sinatra::Base
     DataMapper.setup(:default, "sqlite3://#{db}")
   end
 
+  configure :test do
+    enable :logging, :dump_errors, :raise_errors
+    DataMapper.setup(:default, :adapter => 'in_memory')
+  end
+
   configure :qa do
     enable :logging, :dump_errors, :raise_errors
   end

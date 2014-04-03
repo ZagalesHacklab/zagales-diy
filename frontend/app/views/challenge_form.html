@@ -1,0 +1,84 @@
+<div class="row">
+    <div class="large-12 columns">
+        <div class="tabs-nav">
+            <dl class="tabs" data-tab>
+                <dd><a href="#projects">Retos</a></dd>
+                <dd><a href="#howtoplay">Cómo jugar</a></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<article class= "challenge">
+    <div class="row">
+        <div class="large-9 columns">
+            <header>
+                <h1 class="challenge__title">Proponer un reto</h1>
+            </header>
+            <div class="row">
+                <div class="small-12 columns">
+                    <section class="challenge__form">
+                        <form>
+                            <div class="row">
+                                <div class="small-offset-1 small-10 columns">
+
+                                    {{ challenge}}
+
+                                    <!-- Title -->
+                                    <label>Título
+                                        <input type="text" ng-model="challenge.title" placeholder="Introduce un nombre para tu reto" />
+                                    </label><!-- End Title -->
+                                    <!-- Description -->
+                                    <label>Descripción
+                                        <text-angular ng-model="challenge.description"  ta-toolbar="[['bold', 'italics', 'underline', 'ul', 'ol', 'redo', 'undo', 'clear']]"></text-angular>
+                                    </label><!-- End Description -->
+                                    <!-- Tags -->
+                                    <label>Etiquetas
+                                        <input type="text" ng-model="challenge.label" placeholder="Introduce etiquetas con las que identificar tu reto" />
+                                    </label><!-- End Tags -->
+                                    <!-- Difficulty -->
+                                    <label>Dificultad</label>
+                                    <object type="image/svg+xml" data="/styles/img/icons/alt3_paperplane2.svg" class="challenge__form__rating--minimum"></object>
+                                    <fieldset class="rating">
+                                        <input type="radio" id="star5" ng-model="challenge.rating" value="5" /><label for="star5" title="Imposible">5 stars</label>
+                                        <input type="radio" id="star4" ng-model="challenge.rating" value="4" /><label for="star4" title="Uf, muy complicado">4 stars</label>
+                                        <input type="radio" id="star3" ng-model="challenge.rating" value="3" /><label for="star3" title="Lleva un rato">3 stars</label>
+                                        <input type="radio" id="star2" ng-model="challenge.rating" value="2" /><label for="star2" title="Sencillo">2 stars</label>
+                                        <input type="radio" id="star1" ng-model="challenge.rating" value="1" /><label for="star1" title="Tirado">1 star</label>
+                                    </fieldset><!-- End Difficulty -->
+                                    <i class="fa fa-rocket challenge__form__rating--maximum"></i>
+                                    <!-- End Difficulty -->
+                                    <div class="clearfix"></div>
+                                    <!-- Pics -->
+                                    <label for="pics">Imágenes</label>
+                                    <ul class="row"><!-- Pics Row -->
+                                        <li class="small-6 medium-4 columns">
+                                            <img ng-src="http://ima.gs/ddd/999/999/400x300.png" alt="thumb" src="http://ima.gs/ddd/999/999/150x100.png">
+                                        </li>
+                                        <li class="small-6 medium-4 columns">
+                                            <img ng-src="http://ima.gs/ddd/999/999/400x300.png" alt="thumb" src="http://ima.gs/ddd/999/999/150x100.png">
+                                        </li>
+                                        <li class="medium-4 columns">
+                                            <div class="challenge__form__pics-upload">
+                                                <input type="file" multiple="multiple" name="pics" id="pics" />
+                                                <div class="challenge__form__pics-upload__description">
+                                                    Arrastra o haz click para añadir imágenes<br />
+                                                    <i class="fa fa-camera fa-2x"></i>
+                                                </div>
+                                            </div>
+                                        </li><!-- .challenge__form__pics__upload -->
+                                    </ul><!-- End Pics -->
+                                </div>
+                                <div class="row">
+                                    <div class="small-11 columns">
+                                        <button type="submit" ng-click="saveChallenge()">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </section><!--.challenge__form-->
+                </div>
+            </div>
+        </div>
+    </div>
+</article><!--.challenge__detail-->
+
