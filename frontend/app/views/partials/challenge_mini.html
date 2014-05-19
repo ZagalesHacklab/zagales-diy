@@ -15,7 +15,7 @@
 
         <div class="thumb__cats right">
             <ul class="inline-list">
-                <li ng-repeat="tag in challenge.tags">
+                <li ng-repeat="tag in challenge.tags | formatTags track by challenge.id+$index">
                     <a href="#">{{tag}}</a>
                 </li>
             </ul>
