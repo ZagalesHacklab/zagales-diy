@@ -27,10 +27,7 @@
     "grunt-ngmin": "~0.0.3",
     "yo": "~1.0.4",
     "karma-requirejs": "~0.2.0",
-<<<<<<< HEAD
     "karma": "~0.10.0",
-=======
->>>>>>> master
     "phantomjs": "~1.9.2-2",
     "karma-junit-reporter": "~0.1.0",
     "karma-commonjs": "0.0.2",
