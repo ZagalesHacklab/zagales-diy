@@ -28,5 +28,5 @@ angular.module('zagalesDiyApp', ['ngRoute', 'ngAnimate', 'ngResource', 'textAngu
         })
         .constant('config', {
             // CHALLENGES_URL: 'mocks/challenges.json'
-            CHALLENGES_URL: 'http://localhost:9393/api/challenges' // real api url
+            CHALLENGES_URL: 'http://localhost:9292/api/challenges' // real api url
         });
