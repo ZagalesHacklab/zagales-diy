@@ -1,0 +1,105 @@
+<div class="row">
+    <div class="large-12 columns">
+        <div class="tabs-nav">
+            <dl class="tabs" data-tab>
+                <dd><a href="#projects">Retos</a></dd>
+                <dd><a href="#howtoplay">Cómo jugar</a></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<article class= "solution">
+    <div class="row">
+        <div class="large-9 columns">
+            <header>
+                <h1>Añadir solución</h1>
+            </header>
+            <div class="row">
+                <div class="small-12 columns">
+                    <section class="solution__form">
+                        <form>
+                            <div class="row">
+                                <div class="small-offset-1 small-10 columns">
+                                    <!-- uncomment to test saveChallenge  -->
+                                    <!-- {{ challenge}} -->
+                                    <!-- Title -->
+                                    <h2>Título</h2>
+                                    <!-- End Title -->
+                                    <img src="http://dummyimage.com/800x400/" alt="thumb">
+                                    <section class="challenge__description">
+                                        <h3>
+                                            Descripción
+                                        </h3>
+                                        <p>
+                                            Integer porta ligula odio. Phasellus accumsan congue risus non rutrum. Nulla quis magna consequat, porta enim id, ultricies elit. Pellentesque et dui ac lectus tristique cursus eu eu augue. Donec nec accumsan massa. Praesent dapibus velit sapien, vel congue augue pellentesque quis. Pellentesque at ligula nibh. Duis fringilla vulputate lacinia. Donec in placerat massa, sit amet mattis ligula. Nunc volutpat felis in iaculis molestie. Etiam non enim at nulla sollicitudin aliquam eu nec urna. Nam sit amet eleifend tellus, et semper magna. Suspendisse malesuada ante vitae pharetra consequat. Proin eget ornare nisl, vel posuere urna. Sed tincidunt mattis imperdiet. Maecenas ultricies ante justo, sit amet fringilla nibh pellentesque a.
+                                        </p>
+                                    </section><!--.challenge__description-->
+                                    <!-- Tags -->
+                                    <label>Solución
+                                        <textarea ng-model="solution.label" placeholder="Describe tu solución al reto" rows="10"/></textarea>
+                                    </label><!-- End Tags -->
+                                    <div class="clearfix"></div>
+                                    <!-- Pics -->
+                                    <label for="pics">Imágenes</label>
+                                    <ul class="row"><!-- Pics Row -->
+                                        <li class="small-6 medium-4 columns">
+                                            <img ng-src="http://ima.gs/ddd/999/999/400x300.png" alt="thumb" src="http://ima.gs/ddd/999/999/150x100.png" class="small-12">
+                                        </li>
+                                        <li class="small-6 medium-4 columns">
+                                            <img ng-src="http://ima.gs/ddd/999/999/400x300.png" alt="thumb" src="http://ima.gs/ddd/999/999/150x100.png" class="small-12">
+                                        </li>
+                                        <li class="medium-4 columns">
+                                            <div class="solution__form__pics-upload">
+                                                <input type="file" multiple="multiple" name="pics" id="pics" />
+                                                <div class="solution__form__pics-upload__description">
+                                                    Arrastra o haz click para añadir imágenes<br />
+                                                    <i class="fa fa-camera fa-2x"></i>
+                                                </div>
+                                            </div>
+                                        </li><!-- .solution__form__pics__upload -->
+                                    </ul><!-- End Pics -->
+                                </div>
+                                <div class="row">
+                                    <div class="small-11 columns">
+                                        <button type="submit" ng-click="saveSolution()">Enviar</button>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="small-offset-1 small-10 columns">
+                                        <h3>Otras soluciones</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="small-offset-1 small-10 columns">
+                                        <ul class="row "><!-- Others solutions -->
+                                            <li class="small-12 medium-4 columns">
+                                                <img ng-src="http://ima.gs/ddd/999/999/400x300.png" alt="thumb" src="http://ima.gs/ddd/999/999/150x100.png" class="small-12">
+                                                <p class="solution--othersolutions">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac auctor sapien. Etiam nec venenatis nibh. Nullam ut odio accumsan, suscipit nulla at, convallis tellus. (...)
+                                                </p>
+                                            </li>
+                                            <li class="small-12 medium-4 columns">
+                                                <img ng-src="http://ima.gs/ddd/999/999/400x300.png" alt="thumb" src="http://ima.gs/ddd/999/999/150x100.png" class="small-12">
+                                                <p class="solution--othersolutions">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac auctor sapien. Etiam nec venenatis nibh. Nullam ut odio accumsan, suscipit nulla at, convallis tellus. (...)
+                                                </p>
+                                            </li>
+                                            <li class="small-12 medium-4 columns">
+                                                <img ng-src="http://ima.gs/ddd/999/999/400x300.png" alt="thumb" src="http://ima.gs/ddd/999/999/150x100.png" class="small-12">
+                                                <p class="solution--othersolutions">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac auctor sapien. Etiam nec venenatis nibh. Nullam ut odio accumsan, suscipit nulla at, convallis tellus. (...)
+                                                </p> 
+                                            </li>
+                                        </ul><!-- End Other solutions -->
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </section><!--.solution__form-->
+                </div>
+            </div>
+        </div>
+    </div>
+</article><!--.solution__detail-->
+

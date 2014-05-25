@@ -17,6 +17,10 @@ angular.module('zagalesDiyApp', ['ngRoute', 'ngAnimate', 'ngResource', 'textAngu
                         templateUrl: 'views/challenge_form.html',
                         controller: 'NewChallengeCtrl'
                     })
+                    .when('/AddSolution', {
+                        templateUrl: 'views/solution_form.html',
+                        controller: 'AddSolutionCtrl'
+                    })
                     .otherwise({
                         redirectTo: '/'
                     });

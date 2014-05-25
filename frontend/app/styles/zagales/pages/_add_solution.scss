@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*
+    Created on : 25-may-2014, 12:00:12
+    Author     : Oscar Gascon <o.gascon at gmail.com>
+*/
+
+
+/*------------------------------------*\
+    $SOLUTION
+\*------------------------------------*/
+.solution__form {
+    @extend .challenge__form;
+}
+.solution__form { 
+    h2 {
+        font-family: $headingsSansFontFamily;    
+    }
+    textarea {
+        height: 12em;
+    }
+    .solution--othersolutions {
+        font-size: .8em;
+    }
+}
+
+
+.solution__form__pics-upload {
+    @extend .challenge__form__pics-upload;    
+}
+
+.solution__form__pics-upload__description {
+    @extend .description__form__pics-upload;       
+}
+
