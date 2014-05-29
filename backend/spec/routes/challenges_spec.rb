@@ -24,12 +24,13 @@ describe 'challenges routes' do
   end
 
   describe 'POST' do
-    let(:challenge){{challenge: {title: 'foo', username: 'perico'}}}
+    let(:challenge){ {title: 'foo', username: 'perico'} }
 
     it 'returns the object when save' do
-      post '/api/challenges', challenge
+      post '/api/challenges', challenge.to_json
       response = JSON.parse(last_response.body)
-      expect(response[:username]).to eql challenge[:username]
+
+      expect(response['username']).to eql challenge[:username]
       expect(response['id']).to be
     end
   end

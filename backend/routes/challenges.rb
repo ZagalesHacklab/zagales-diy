@@ -9,7 +9,7 @@ class ZagalesApi < Sinatra::Base
 
   post '/api/challenges' do
     content_type :json
-    challenge = Challenge.create(params[:challenge])
+    challenge = Challenge.create(JSON.parse(request.body.read))
     challenge.to_json
   end
 
