@@ -35,5 +35,13 @@ describe 'challenge model' do
 
   end
 
+  context 'validations' do
+    it 'needs the title' do
+      challenge = Challenge.new
+      expect(challenge.valid?).to be_false
+      expect(challenge.errors.keys).to include(:title)
+    end
+
+  end
 
 end

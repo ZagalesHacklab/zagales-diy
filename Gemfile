@@ -5,6 +5,7 @@ ruby '2.0.0'
 gem 'sinatra'
 gem 'datamapper'
 gem 'dm-sqlite-adapter'
+gem 'dm-validations'
 
 group :test do
   gem 'rake'
