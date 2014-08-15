@@ -40,3 +40,7 @@ gem 'spring',        group: :development
 
 # User authentication
 gem 'devise'
+
+# Foundation
+gem 'compass-rails'
+gem 'zurb-foundation'
