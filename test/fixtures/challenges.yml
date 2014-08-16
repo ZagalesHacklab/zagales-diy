@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one:
+  title: 'Construye un mundo en Minecraft'
+  description: 'Debes instalar el juego, y luego crear un mundo a tu medida'
+  image_url: 'http://minecraft.net/world.jpg'
+
+two:
+  title: 'Semáforo con Arduino'
+  description: '¿no te gustaría tener un semáforo en la puerta de tu cuarto?'
+  image_url: 'http://images.google.com/semaforo.jpg'
