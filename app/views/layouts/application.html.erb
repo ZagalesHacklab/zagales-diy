@@ -27,11 +27,100 @@
 </head>
 
 <body>
+
+
+<nav class="top-bar" data-topbar>
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="#">Clan.zagales</a></h1>
+        </li>
+    </ul>
+
+    <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+            <li>
+                <a href="#">
+                    <object type="image/svg+xml" data="/styles/img/icons/alt_pen.svg" class="top-bar__buttons"></object>
+                    Regístrate
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <object type="image/svg+xml" data="/styles/img/icons/alt_key.svg" class="top-bar__buttons"></object>
+                    Acceder
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="/#/NewChallenge">
+                    <object type="image/svg+xml" data="/styles/img/icons/alt_fire.svg" class="top-bar__buttons"></object>
+                    Proponer un reto
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li class="has-dropdown">
+                <a href="#">
+                    <object type="image/svg+xml" data="/styles/img/icons/alt_user.svg" class="top-bar__buttons"></object>
+                    Username
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="#">
+                            <object type="image/svg+xml" data="/styles/img/icons/alt_study.svg" class="top-bar__buttons"></object>
+                            Mi página
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <object type="image/svg+xml" data="/styles/img/icons/alt_settings.svg" class="top-bar__buttons"></object>
+                            Configuración
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <object type="image/svg+xml" data="/styles/img/icons/alt_lock.svg" class="top-bar__buttons"></object>
+                            Cerrar sesión
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</nav>
+
 <p class="notice"><%= notice %></p>
 
 <p class="alert"><%= alert %></p>
 <%= yield %>
 
+<div class="sub-footer">
+    <div class="row">
+        <div class="large-3 columns">
+            <nav class="nav-footer">
+                <ul class="side-nav">
+                    <li><a href="#"><i class="fa fa-info-circle"></i> Acerca de</a></li>
+                    <li><a href="#"><i class="fa fa-question-circle"></i> Preguntas frecuentes</a></li>
+                </ul>
+            </nav><!-- .nav-footer -->
+        </div>
+        <div class="large-3 columns">
+            <div class="uplink text-right">
+                <a href="#" title="Volver arriba">
+                    <object id="topup-link" type="image/svg+xml" data="/styles/img/icons/alt_toup.svg"></object>
+                </a>
+            </div>
+        </div>
+    </div>
+</div><!-- .sub-footer -->
+<footer class="footer">
+    <div class="row">
+        <div class="small-6 large-centered columns text-center">
+            Clan.zagales. <a href="#">info@email.com</a>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+</footer>
 
 <%= javascript_include_tag "application" %>
 </body>
