@@ -20,13 +20,37 @@
             </div>
             <!-- .sub-nav-challenges -->
             <div class="thumbs-container">
-
                 <div class="row">
-
                     <div class="medium-6 large-4 columns" ng-repeat="challenge in challenges">
-                        <zg-challenge-mini ng-model="challenge"></zg-challenge-mini>
-                    </div>
+                    <% @challenges.each do |challenge| %>
 
+                          <article class="thumb">
+                              <div class="thumb__image">
+                                  <%= link_to 'Show', challenge, class: 'show' %>
+                                      <%= image_tag challenge.image_url %>
+
+                              </div>
+                              <div class="thumb__title">
+                                  <header><%= challenge.title %></header>
+                              </div>
+                              <div class="thumb__meta">
+                                  <a href="#">
+                                      <img ng-src="{{challenge.avatar}}" alt="avatar">
+                                      <span>{{challenge.username}}</span>
+                                  </a>
+
+                                  <div class="thumb__cats right">
+                                      <ul class="inline-list">
+                                          <!--<li ng-repeat="tag in challenge.tags | formatTags track by challenge.id+$index">-->
+                                              <!--<a href="#">{{tag}}</a>-->
+                                          <!--</li>-->
+                                      </ul>
+                                  </div>
+                              </div>
+                          </article>
+
+                    <% end %>
+                    </div>
                 </div>
             </div>
             <!-- .thumbs-container -->
@@ -54,9 +78,8 @@
     </div>
 </div>
 </div>
-</div><!-- .content-wrapper -->
 
-<div class="outro">
+<div class="otro">
     <div class="row">
         <div class="large-4 columns">
             <h3>
